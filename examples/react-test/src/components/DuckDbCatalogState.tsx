@@ -1,7 +1,7 @@
 import React from 'react'
 import { useAtom, useAtomValue, Atom } from 'jotai'
 import { prettyPrintXState } from '@jr200/xstate-atoms'
-import { renderKeyAtom, tableDefinitionsAtom } from './atoms'
+import { renderKeyAtom } from './atoms'
 
 export const DuckDbCatalogState = ({ label, someAtom }: { label: string; someAtom: Atom<any> }) => {
   const someState = useAtomValue(someAtom)

@@ -1,19 +1,20 @@
 import { getDefaultStore } from 'jotai'
-import { epochAtom, timeConfigAtom, epochRoundedFamily, timeTzFamily } from './atoms'
+import { epochAtom, epochOffsetAtom, epochRoundedFamily, timeTzFamily } from './atoms'
 import { Temporal } from '@js-temporal/polyfill'
-import { expect, test } from 'vitest'
+import { expect, test, beforeEach } from 'vitest'
 import { TimeGranularity } from './types'
 
 const store = getDefaultStore()
 
 const FIXED_EPOCH = Temporal.Instant.from('2024-03-15T12:34:56.789Z').epochMilliseconds
 
-store.set(timeConfigAtom, {
-  offset: 0,
+beforeEach(() => {
+  store.set(epochOffsetAtom, 0)
+  store.set(epochAtom, 0)
 })
-store.set(epochAtom, FIXED_EPOCH)
 
 test('truncates to minute correctly', () => {
+  store.set(epochAtom, FIXED_EPOCH)
   const val = store.get(epochRoundedFamily('minute'))
   const expected = Temporal.Instant.fromEpochMilliseconds(FIXED_EPOCH)
     .toZonedDateTimeISO('UTC')
@@ -23,6 +24,7 @@ test('truncates to minute correctly', () => {
 })
 
 test('truncates to hour correctly', () => {
+  store.set(epochAtom, FIXED_EPOCH)
   const val = store.get(epochRoundedFamily('hour'))
   const expected = Temporal.Instant.fromEpochMilliseconds(FIXED_EPOCH)
     .toZonedDateTimeISO('UTC')
@@ -32,6 +34,7 @@ test('truncates to hour correctly', () => {
 })
 
 test('does not truncate with undefined granularity', () => {
+  store.set(epochAtom, FIXED_EPOCH)
   const val = store.get(epochRoundedFamily(undefined))
   expect(val).toBe(FIXED_EPOCH)
 })
@@ -57,10 +60,7 @@ function getExpectedTruncation(epoch: number, granularity: TimeGranularity): num
 }
 
 test('offset correctly applied in fixed mode', () => {
-  store.set(timeConfigAtom, {
-    source: 'external',
-    offset: 5000, // +5 seconds
-  })
+  store.set(epochOffsetAtom, 5000) // +5 seconds
   store.set(epochAtom, FIXED_EPOCH)
 
   const epoch = store.get(epochRoundedFamily('second'))
@@ -69,10 +69,7 @@ test('offset correctly applied in fixed mode', () => {
 })
 
 test('offset correctly subtracted in fixed mode', () => {
-  store.set(timeConfigAtom, {
-    source: 'external',
-    offset: -1000, // -1 second
-  })
+  store.set(epochOffsetAtom, -1000)
   store.set(epochAtom, FIXED_EPOCH)
 
   const epoch = store.get(epochRoundedFamily('second'))
@@ -81,9 +78,7 @@ test('offset correctly subtracted in fixed mode', () => {
 })
 
 test('time with offset adds offset', () => {
-  store.set(timeConfigAtom, {
-    offset: 60_000, // +1 minute
-  })
+  store.set(epochOffsetAtom, 60_000) // +1 minute
 
   const now = Temporal.Now.instant().epochMilliseconds
   store.set(epochAtom, now)
@@ -93,20 +88,16 @@ test('time with offset adds offset', () => {
 })
 
 test('time is initially undefined', () => {
-  store.set(timeConfigAtom, {
-    offset: 0,
-  })
+  store.set(epochOffsetAtom, 0)
 
   const result = store.get(epochRoundedFamily('minute'))
-  expect(result).toBeUndefined()
+  expect(result).toBe(0)
 })
 
 test('time can be injected manually', () => {
   const testEpoch = Temporal.Instant.from('2025-01-01T00:01:30Z').epochMilliseconds
 
-  store.set(timeConfigAtom, {
-    offset: 0,
-  })
+  store.set(epochOffsetAtom, 0)
 
   // Manually inject epochAtom
   store.set(epochAtom, testEpoch)
@@ -123,12 +114,10 @@ test('time can be injected manually', () => {
 test('minute-level atom does not update when only seconds change', () => {
   // Track subscription calls
   let updateCount = 0
-  const updateValues: (number | undefined)[] = []
+  const updateValues: number[] = []
 
   // Set up external time source
-  store.set(timeConfigAtom, {
-    offset: 0,
-  })
+  store.set(epochOffsetAtom, 0)
 
   // Subscribe to minute-level atom
   const minuteAtom = epochRoundedFamily('minute')

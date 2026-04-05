@@ -3,8 +3,7 @@ import { Temporal } from '@js-temporal/polyfill'
 import { TimeGranularity } from './types'
 
 // --- Helpers ---
-export function truncateTime(epochMs: number | undefined, granularity?: TimeGranularity): number | undefined {
-  if (!epochMs) return undefined
+export function truncateTime(epochMs: number, granularity?: TimeGranularity): number {
   if (!granularity) return epochMs
 
   const msMap: Record<TimeGranularity, number> = {
@@ -19,8 +18,7 @@ export function truncateTime(epochMs: number | undefined, granularity?: TimeGran
   return Math.floor(epochMs / ms) * ms
 }
 
-export function toZonedDateTime(epochMs: number | undefined, timeZone: string): Temporal.ZonedDateTime | undefined {
-  if (!epochMs) return undefined
+export function toZonedDateTime(epochMs: number, timeZone: string): Temporal.ZonedDateTime {
   const instant = Temporal.Instant.fromEpochMilliseconds(epochMs)
   return instant.toZonedDateTimeISO(timeZone)
 }
