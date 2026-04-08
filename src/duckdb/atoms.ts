@@ -1,14 +1,14 @@
 import { atomWithActor, atomWithActorSnapshot } from 'jotai-xstate'
-import { duckdbMachine } from '@jr200/xstate-duckdb'
+import { duckdbMachine } from '@jr200-labs/xstate-duckdb'
 import { AnyActor } from 'xstate'
-import { atom } from 'jotai'
+import { atom, WritableAtom } from 'jotai'
 
 // this pattern/workaround for accessing child states is from:
 // https://github.com/jotaijs/jotai-xstate/issues/11
-export const duckdbActorAtom = atomWithActor(duckdbMachine)
+export const duckdbActorAtom: WritableAtom<any, any, any> = atomWithActor(duckdbMachine)
 duckdbActorAtom.debugLabel = 'xa.duckdbActorAtom'
 
-export const duckdbSnapshotAtom = atomWithActorSnapshot(get => {
+export const duckdbSnapshotAtom: WritableAtom<any, any, any> = atomWithActorSnapshot(get => {
   const snapshot = get(duckdbActorAtom)
   return snapshot
 })

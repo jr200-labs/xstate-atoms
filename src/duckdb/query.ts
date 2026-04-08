@@ -1,7 +1,7 @@
 import { Atom, atom, Getter, Setter, WritableAtom } from 'jotai'
 import { atomFamily } from 'jotai/utils'
 import { duckdbActorAtom, duckdbHandleAtom } from './atoms'
-import { duckdbRunQuery, QueryDbParams } from '@jr200/xstate-duckdb'
+import { duckdbRunQuery, QueryDbParams } from '@jr200-labs/xstate-duckdb'
 import { AtomFamily } from 'jotai/vanilla/utils/atomFamily'
 
 export const duckdbExecuteAtom = atom(
@@ -27,7 +27,7 @@ export const duckdbExecuteAtom = atom(
         queryParams: {
           ...query.params,
           description: description,
-          callback: data => {
+          callback: (data: any) => {
             set(query.dataAtom, data ?? [])
           },
         },
@@ -141,7 +141,7 @@ export const duckdbQueryFamily: AtomFamily<
       const description = params.initialParams?.description ?? params.queryId
 
       try {
-        const connection = await db.connect()
+        const connection = await (db as any).connect()
         console.log('** running duckdb read-only query', description)
         const result = await duckdbRunQuery({ ...queryParams, connection, description, sql: hydratedSql })
         return result

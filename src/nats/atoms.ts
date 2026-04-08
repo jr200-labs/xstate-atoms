@@ -1,5 +1,5 @@
 import { atomWithActor, atomWithActorSnapshot } from 'jotai-xstate'
-import { natsMachine, type NatsContext, type NatsEvent } from '@jr200/xstate-nats'
+import { natsMachine, type NatsContext, type NatsEvent } from '@jr200-labs/xstate-nats'
 import { Actor, AnyActor, StateMachine } from 'xstate'
 import { atom, WritableAtom } from 'jotai'
 

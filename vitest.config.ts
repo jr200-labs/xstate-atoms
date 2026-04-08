@@ -9,11 +9,7 @@ export default defineConfig({
     include: ['src/**/*.test.ts'],
     exclude: ['dist/**', 'node_modules/**'],
     pool: 'forks',
-    poolOptions: {
-      forks: {
-        singleFork: true,
-      },
-    },
+    maxWorkers: 1,
     coverage: {
       provider: 'v8',
       reporter: ['text', 'text-summary'],
