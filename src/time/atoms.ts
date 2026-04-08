@@ -1,6 +1,6 @@
 // atoms.ts
 import { atom } from 'jotai'
-import { atomFamily } from 'jotai/utils'
+import { atomFamily } from 'jotai-family'
 import { truncateTime, toZonedDateTime } from './utils'
 import { TimeGranularity } from './types'
 

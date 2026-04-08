@@ -1,8 +1,7 @@
 import { Atom, atom, Getter, Setter, WritableAtom } from 'jotai'
-import { atomFamily } from 'jotai/utils'
+import { atomFamily, AtomFamily } from 'jotai-family'
 import { duckdbActorAtom, duckdbHandleAtom } from './atoms'
 import { duckdbRunQuery, QueryDbParams } from '@jr200-labs/xstate-duckdb'
-import { AtomFamily } from 'jotai/vanilla/utils/atomFamily'
 
 export const duckdbExecuteAtom = atom(
   null,

@@ -1,6 +1,6 @@
 {
   "name": "@jr200-labs/xstate-atoms",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "jr200",
   "description": "Various XState Jotai Atoms...",
   "repository": {
@@ -36,6 +36,7 @@
     "@nats-io/obj": "^3.3.1",
     "apache-arrow": "^21.1.0",
     "jotai": "^2.19.1",
+    "jotai-family": "^1.0.1",
     "jotai-xstate": "^0.6.1",
     "xstate": "^5.30.0"
   },
@@ -52,6 +53,7 @@
     "eslint": "^10.2.0",
     "globals": "^17.4.0",
     "husky": "^9.1.7",
+    "jotai-family": "^1.0.1",
     "prettier": "^3.8.1",
     "typescript": "^6.0.2",
     "typescript-eslint": "^8.58.1",
