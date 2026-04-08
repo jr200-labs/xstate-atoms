@@ -1,5 +1,5 @@
 {
-  "name": "@jr200/xstate-atoms-react-test",
+  "name": "@jr200-labs/xstate-atoms-react-test",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@duckdb/duckdb-wasm": "1.29.1-dev132.0",
-    "@jr200/xstate-atoms": "workspace:*",
+    "@jr200-labs/xstate-atoms": "workspace:*",
     "@js-temporal/polyfill": "^0.5.1",
     "@nats-io/jetstream": "^3.1.0",
     "@nats-io/kv": "^3.1.0",

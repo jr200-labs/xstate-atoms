@@ -1,6 +1,6 @@
 import React from 'react'
 import { useAtom, useAtomValue, useSetAtom } from 'jotai'
-import { duckdbActorAtom, prettyPrintXState, duckdbSnapshotAtom } from '@jr200/xstate-atoms'
+import { duckdbActorAtom, prettyPrintXState, duckdbSnapshotAtom } from '@jr200-labs/xstate-atoms'
 import yaml from 'js-yaml'
 import configContent from '/duckdbmachine.yaml.txt?raw'
 import { ProgressBar } from './ProgressBar'

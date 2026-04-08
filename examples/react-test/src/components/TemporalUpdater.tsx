@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { useAtom } from 'jotai'
-import { epochAtom } from '@jr200/xstate-atoms'
+import { epochAtom } from '@jr200-labs/xstate-atoms'
 
 export const TemporalUpdater = () => {
   const [_, setEpoch] = useAtom(epochAtom)

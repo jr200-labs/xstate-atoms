@@ -1,6 +1,6 @@
 import React from 'react'
 import { useAtom, useAtomValue } from 'jotai'
-import { prettyPrintXState, duckdbCatalogSnapshotAtom } from '@jr200/xstate-atoms'
+import { prettyPrintXState, duckdbCatalogSnapshotAtom } from '@jr200-labs/xstate-atoms'
 import { renderKeyAtom } from './atoms'
 
 export const DuckDbCatalog = () => {

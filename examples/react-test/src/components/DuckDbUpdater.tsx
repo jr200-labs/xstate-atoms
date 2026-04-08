@@ -1,6 +1,6 @@
 import React from 'react'
 import { useSetAtom } from 'jotai'
-import { duckdbActorAtom } from '@jr200/xstate-atoms'
+import { duckdbActorAtom } from '@jr200-labs/xstate-atoms'
 import payloadContent from '/payload.b64ipc_zlib.txt?raw'
 import { callbackTextAtom } from './atoms'
 

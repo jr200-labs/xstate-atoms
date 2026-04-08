@@ -9,7 +9,7 @@ import { DuckDbCatalog } from './components/DuckDbCatalog'
 import { DuckDbUpdater } from './components/DuckDbUpdater'
 import { DuckDbStatus } from './components/DuckDbStatus'
 import { DuckDbCatalogState } from './components/DuckDbCatalogState'
-import { duckdbCatalogLoadedVersionsAtom, duckdbCatalogTableDefinitionsAtom } from '@jr200/xstate-atoms'
+import { duckdbCatalogLoadedVersionsAtom, duckdbCatalogTableDefinitionsAtom } from '@jr200-labs/xstate-atoms'
 
 function App() {
   return (

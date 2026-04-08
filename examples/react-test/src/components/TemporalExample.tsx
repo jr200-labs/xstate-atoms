@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useAtomValue } from 'jotai'
-import { epochAtom } from '@jr200/xstate-atoms'
+import { epochAtom } from '@jr200-labs/xstate-atoms'
 
 export const TemporalExample = () => {
   const epoch = useAtomValue<number | undefined>(epochAtom)

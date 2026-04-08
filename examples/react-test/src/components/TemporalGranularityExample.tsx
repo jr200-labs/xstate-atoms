@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { type TimeGranularity, useZonedTime } from '@jr200/xstate-atoms'
+import { type TimeGranularity, useZonedTime } from '@jr200-labs/xstate-atoms'
 
 export const TemporalGranularityExample = ({ granularity }: { granularity: TimeGranularity }) => {
   const zdt = useZonedTime(granularity, 'UTC')

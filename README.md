@@ -1,4 +1,4 @@
-# @jr200/xstate-atoms
+# @jr200-labs/xstate-atoms
 
 A collection of Jotai atoms for integrating XState with various technologies. This is a work-in-progress library.
 
@@ -11,13 +11,13 @@ A collection of Jotai atoms for integrating XState with various technologies. Th
 ## Installation
 
 ```bash
-npm install @jr200/xstate-atoms
+npm install @jr200-labs/xstate-atoms
 ```
 
 ## Usage
 
 ```typescript
-import { useEpoch, useZonedTime } from '@jr200/xstate-atoms'
+import { useEpoch, useZonedTime } from '@jr200-labs/xstate-atoms'
 // Import specific atoms as needed
 ```
 

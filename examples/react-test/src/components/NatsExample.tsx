@@ -1,6 +1,6 @@
 import React from 'react'
 import { useAtomValue, useSetAtom } from 'jotai'
-import { natsActorAtom, natsSnapshotAtom, prettyPrintXState } from '@jr200/xstate-atoms'
+import { natsActorAtom, natsSnapshotAtom, prettyPrintXState } from '@jr200-labs/xstate-atoms'
 import yaml from 'js-yaml'
 import configContent from '/nats_basic.yaml.txt?raw'
 
