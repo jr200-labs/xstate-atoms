@@ -1,14 +1,6 @@
 packages:
   - "."
   - "examples/*"
-  - "../xstate-duckdb"
-  - "../xstate-nats"
-
 
 ignoredBuiltDependencies:
   - esbuild
-
-overrides:
-  "@jr200-labs/xstate-atoms": "workspace:*"
-  "@jr200-labs/xstate-duckdb": "workspace:*"
-  "@jr200-labs/xstate-nats": "workspace:*"

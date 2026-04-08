@@ -29,6 +29,26 @@ See the `examples/react-test` directory for working examples of each integration
 
 This is work-in-progress. APIs may change between versions.
 
+```bash
+make install
+```
+
+### Developing against sibling packages
+
+To develop against local copies of `@jr200-labs/xstate-duckdb` and `@jr200-labs/xstate-nats`, link them into the workspace:
+
+```bash
+make link
+```
+
+This symlinks the sibling repos (expected at `../xstate-duckdb` and `../xstate-nats`) into `node_modules` without modifying the lockfile, so CI remains unaffected.
+
+To restore the published registry versions:
+
+```bash
+make unlink
+```
+
 ## License
 
 MIT

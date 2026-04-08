@@ -1,6 +1,6 @@
 VERSION := $(shell node -p "require('./package.json').version")
 
-.PHONY: all install update check test test-watch build bump release clean publish
+.PHONY: all install update check test test-watch build bump release clean publish link unlink
 
 all: check
 
@@ -41,6 +41,13 @@ release: check build
 	git tag "v$(VERSION)"
 	git push origin "v$(VERSION)"
 	gh release create "v$(VERSION)" --generate-notes
+
+link:
+	pnpm link ../xstate-duckdb ../xstate-nats
+
+unlink:
+	pnpm unlink @jr200-labs/xstate-duckdb @jr200-labs/xstate-nats
+	pnpm install
 
 clean:
 	rm -rf dist
