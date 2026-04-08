@@ -6,12 +6,27 @@ export default defineConfig({
     environment: 'node',
     testTimeout: 10000,
     hookTimeout: 5000,
-    // Add these settings to help with module resolution
+    include: ['src/**/*.test.ts'],
+    exclude: ['dist/**', 'node_modules/**'],
     pool: 'forks',
     poolOptions: {
       forks: {
         singleFork: true,
       },
+    },
+    coverage: {
+      provider: 'v8',
+      reporter: ['text', 'text-summary'],
+      include: ['src/**/*.ts'],
+      exclude: [
+        'src/**/*.test.ts',
+        'src/index.ts',
+        'src/time/types.ts',
+        'src/time/hooks.ts',
+        'src/duckdb/atoms.ts',
+        'src/duckdb/query.ts',
+        'src/nats/atoms.ts',
+      ],
     },
   },
 })
