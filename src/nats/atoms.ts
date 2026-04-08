@@ -3,11 +3,6 @@ import { natsMachine, type NatsContext, type NatsEvent } from '@jr200-labs/xstat
 import { Actor, AnyActor, StateMachine } from 'xstate'
 import { atom, WritableAtom } from 'jotai'
 
-// this pattern/workaround for accessing child states is from:
-// https://github.com/jotaijs/jotai-xstate/issues/11
-
-// this is a workaround to get at least some information out of
-// the 'too complex' natsMachine type
 type NatsMachine = StateMachine<NatsContext, NatsEvent, any, any, any, any, any, any, any, any, any, any, any, any>
 
 export const natsActorAtom = atomWithActor(natsMachine) as WritableAtom<Actor<NatsMachine>, any, any>
@@ -21,15 +16,13 @@ natsSnapshotAtom.debugLabel = 'xa.natsSnapshotAtom'
 
 export const natsSubjectSnapshotAtom = atomWithActorSnapshot(get => {
   const snapshot = get(natsSnapshotAtom)
-  const child = snapshot.children.subject
-  return child as AnyActor
+  return snapshot.children.subject as AnyActor | undefined
 })
 natsSubjectSnapshotAtom.debugLabel = 'xa.natsSubjectSnapshotAtom'
 
 export const natsKvSnapshotAtom = atomWithActorSnapshot(get => {
   const snapshot = get(natsSnapshotAtom)
-  const child = snapshot.children.kv
-  return child as AnyActor
+  return snapshot.children.kv as AnyActor | undefined
 })
 natsKvSnapshotAtom.debugLabel = 'xa.natsKvSnapshotAtom'
 
