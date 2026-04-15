@@ -29,7 +29,7 @@
   "keywords": [],
   "packageManager": "pnpm@10.33.0",
   "peerDependencies": {
-    "@duckdb/duckdb-wasm": "^1.33.1-dev42.0",
+    "@duckdb/duckdb-wasm": "^1.33.1-dev45.0",
     "@nats-io/jetstream": "^3.3.1",
     "@nats-io/kv": "^3.3.1",
     "@nats-io/nats-core": "^3.3.1",
@@ -51,12 +51,12 @@
     "@statelyai/inspect": "^0.7.1",
     "@vitest/coverage-v8": "^4.1.4",
     "eslint": "^10.2.0",
-    "globals": "^17.4.0",
+    "globals": "^17.5.0",
     "husky": "^9.1.7",
     "jotai-family": "^1.0.1",
-    "prettier": "^3.8.2",
+    "prettier": "^3.8.3",
     "typescript": "^6.0.2",
-    "typescript-eslint": "^8.58.1",
+    "typescript-eslint": "^8.58.2",
     "vitest": "^4.1.4"
   }
 }
