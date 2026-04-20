@@ -54,3 +54,4 @@ analyze/
 dist/
 dist/*
 .history/*
+.shared/
