@@ -1,0 +1,12 @@
+# syncpack config — enforce semver range consistency
+semverGroups:
+  - label: "Default — caret ranges"
+    dependencies:
+      - "**"
+    range: "^"
+
+versionGroups:
+  - label: "Ignore example apps"
+    packages:
+      - "@jr200-labs/xstate-atoms-react-test"
+    isIgnored: true
