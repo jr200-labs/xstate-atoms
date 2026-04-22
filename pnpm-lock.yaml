@@ -12,11 +12,11 @@ importers:
         specifier: ^1.33.1-dev45.0
         version: 1.33.1-dev45.0
       '@jr200-labs/xstate-duckdb':
-        specifier: ^0.3.0
-        version: 0.3.0(react@19.2.4)
+        specifier: ^0.4.0
+        version: 0.4.0(@opentelemetry/api@1.9.1)(react@19.2.4)
       '@jr200-labs/xstate-nats':
-        specifier: ^0.6.0
-        version: 0.6.0
+        specifier: ^0.7.0
+        version: 0.7.0(@opentelemetry/api@1.9.1)
       '@js-temporal/polyfill':
         specifier: ^0.5.1
         version: 0.5.1
@@ -32,6 +32,9 @@ importers:
       '@nats-io/obj':
         specifier: ^3.3.1
         version: 3.3.1
+      '@opentelemetry/api':
+        specifier: ^1.9.0
+        version: 1.9.1
       '@types/js-yaml':
         specifier: ^4.0.9
         version: 4.0.9
@@ -83,7 +86,7 @@ importers:
         version: 8.58.2(eslint@10.2.0(jiti@1.21.7))(typescript@6.0.2)
       vitest:
         specifier: ^4.1.4
-        version: 4.1.4(@types/node@24.3.0)(@vitest/coverage-v8@4.1.4)(vite@8.0.7(@types/node@24.3.0)(jiti@1.21.7)(yaml@2.8.1))
+        version: 4.1.4(@opentelemetry/api@1.9.1)(@types/node@24.3.0)(@vitest/coverage-v8@4.1.4)(vite@8.0.7(@types/node@24.3.0)(jiti@1.21.7)(yaml@2.8.1))
 
   examples/react-test:
     dependencies:
@@ -344,11 +347,15 @@ packages:
     resolution: {integrity: sha512-DmdYgtezMkh3cpU8/1uyXakv3tJRcmcXxBOcO0tbaozPwpmh4YMsnWrQm9ZmZMfa5ocbxzbFk6O4bDPEc/iAnA==}
     engines: {node: ^18.14.0 || ^20.0.0 || ^22.0.0 || >=24.0.0}
 
-  '@jr200-labs/xstate-duckdb@0.3.0':
-    resolution: {integrity: sha512-1w5xMaJTeiJzO0rmBzvsu1ka8XEOQHBOgprlykjexciV2gp+SfQa+uS4jr8cEFrf3HHOltYn9N3BEnz9yodBhg==}
+  '@jr200-labs/xstate-duckdb@0.4.0':
+    resolution: {integrity: sha512-wG2kNtj3raycBhbkfnTR2DYTVAPlR4hgmqXteKl5bmlLa+SDuVeI/aqI2Rd8dFL/7yzlNhJ9tFvVYZemOd8BFg==}
+    peerDependencies:
+      '@opentelemetry/api': ^1.9.0
 
-  '@jr200-labs/xstate-nats@0.6.0':
-    resolution: {integrity: sha512-ieac+llCoxjx+lKa8F6Tn0ndWg+UZ9zyn9LHIpBQ6mnB92SB6Rxb8MvpuXodk31Uu31xYe77qvE62gEas65uCw==}
+  '@jr200-labs/xstate-nats@0.7.0':
+    resolution: {integrity: sha512-eiYKWIyDaIkdQ2ymGwhevFxnkUPjr70h3LWnbtSvRN9loozNFtkT5oPlxkG5GcAEiVEEWWGKY1vExwF8fIyudw==}
+    peerDependencies:
+      '@opentelemetry/api': ^1.9.0
 
   '@jridgewell/gen-mapping@0.3.13':
     resolution: {integrity: sha512-2kkt/7niJ6MgEPxF0bYdQ6etZaA+fQvDcLKckhy1yIQOzaoKjBBjSj63/aLVjYE3qhRt5dvM+uUyfCg6UKCBbA==}
@@ -412,6 +419,10 @@ packages:
 
   '@nats-io/obj@3.3.1':
     resolution: {integrity: sha512-sGQbVdCE1TeAWyNT1o5ynPUo618J1d7gVtKnlbH+X/0hucEHTSYjqNB+6ZfGdVfQkoQISzjLsB7xvG7nqunPmg==}
+
+  '@opentelemetry/api@1.9.1':
+    resolution: {integrity: sha512-gLyJlPHPZYdAk1JENA9LeHejZe1Ti77/pTeFm/nMXmQH/HFZlcS/O2XJB+L8fkbrNSqhdtlvjBVjxwUYanNH5Q==}
+    engines: {node: '>=8.0.0'}
 
   '@oxc-project/types@0.123.0':
     resolution: {integrity: sha512-YtECP/y8Mj1lSHiUWGSRzy/C6teUKlS87dEfuVKT09LgQbUsBW1rNg+MiJ4buGu3yuADV60gbIvo9/HplA56Ew==}
@@ -2106,23 +2117,25 @@ snapshots:
     dependencies:
       '@sinclair/typebox': 0.34.40
 
-  '@jr200-labs/xstate-duckdb@0.3.0(react@19.2.4)':
+  '@jr200-labs/xstate-duckdb@0.4.0(@opentelemetry/api@1.9.1)(react@19.2.4)':
     dependencies:
-      '@duckdb/duckdb-wasm': 1.33.1-dev42.0
+      '@duckdb/duckdb-wasm': 1.33.1-dev45.0
+      '@opentelemetry/api': 1.9.1
       apache-arrow: 21.1.0
-      duckdb-wasm-kit: 0.1.39(@duckdb/duckdb-wasm@1.33.1-dev42.0)(apache-arrow@21.1.0)(react@19.2.4)
+      duckdb-wasm-kit: 0.1.39(@duckdb/duckdb-wasm@1.33.1-dev45.0)(apache-arrow@21.1.0)(react@19.2.4)
       pako: 2.1.0
       xstate: 5.30.0
     transitivePeerDependencies:
       - '@75lb/nature'
       - react
 
-  '@jr200-labs/xstate-nats@0.6.0':
+  '@jr200-labs/xstate-nats@0.7.0(@opentelemetry/api@1.9.1)':
     dependencies:
       '@nats-io/jetstream': 3.3.1
       '@nats-io/kv': 3.3.1
       '@nats-io/nats-core': 3.3.1
       '@nats-io/obj': 3.3.1
+      '@opentelemetry/api': 1.9.1
       xstate: 5.30.0
 
   '@jridgewell/gen-mapping@0.3.13':
@@ -2203,6 +2216,8 @@ snapshots:
       '@nats-io/jetstream': 3.3.1
       '@nats-io/nats-core': 3.3.1
       js-sha256: 0.11.1
+
+  '@opentelemetry/api@1.9.1': {}
 
   '@oxc-project/types@0.123.0': {}
 
@@ -2438,7 +2453,7 @@ snapshots:
       obug: 2.1.1
       std-env: 4.0.0
       tinyrainbow: 3.1.0
-      vitest: 4.1.4(@types/node@24.3.0)(@vitest/coverage-v8@4.1.4)(vite@8.0.7(@types/node@24.3.0)(jiti@1.21.7)(yaml@2.8.1))
+      vitest: 4.1.4(@opentelemetry/api@1.9.1)(@types/node@24.3.0)(@vitest/coverage-v8@4.1.4)(vite@8.0.7(@types/node@24.3.0)(jiti@1.21.7)(yaml@2.8.1))
 
   '@vitest/expect@4.1.4':
     dependencies:
@@ -2673,6 +2688,13 @@ snapshots:
   duckdb-wasm-kit@0.1.39(@duckdb/duckdb-wasm@1.33.1-dev42.0)(apache-arrow@21.1.0)(react@19.2.4):
     dependencies:
       '@duckdb/duckdb-wasm': 1.33.1-dev42.0
+      apache-arrow: 21.1.0
+      react: 19.2.4
+      react-async-hook: 4.0.0(react@19.2.4)
+
+  duckdb-wasm-kit@0.1.39(@duckdb/duckdb-wasm@1.33.1-dev45.0)(apache-arrow@21.1.0)(react@19.2.4):
+    dependencies:
+      '@duckdb/duckdb-wasm': 1.33.1-dev45.0
       apache-arrow: 21.1.0
       react: 19.2.4
       react-async-hook: 4.0.0(react@19.2.4)
@@ -3450,7 +3472,7 @@ snapshots:
       jiti: 1.21.7
       yaml: 2.8.1
 
-  vitest@4.1.4(@types/node@24.3.0)(@vitest/coverage-v8@4.1.4)(vite@8.0.7(@types/node@24.3.0)(jiti@1.21.7)(yaml@2.8.1)):
+  vitest@4.1.4(@opentelemetry/api@1.9.1)(@types/node@24.3.0)(@vitest/coverage-v8@4.1.4)(vite@8.0.7(@types/node@24.3.0)(jiti@1.21.7)(yaml@2.8.1)):
     dependencies:
       '@vitest/expect': 4.1.4
       '@vitest/mocker': 4.1.4(vite@8.0.7(@types/node@24.3.0)(jiti@1.21.7)(yaml@2.8.1))
@@ -3473,6 +3495,7 @@ snapshots:
       vite: 8.0.7(@types/node@24.3.0)(jiti@1.21.7)(yaml@2.8.1)
       why-is-node-running: 2.3.0
     optionalDependencies:
+      '@opentelemetry/api': 1.9.1
       '@types/node': 24.3.0
       '@vitest/coverage-v8': 4.1.4(vitest@4.1.4)
     transitivePeerDependencies:
