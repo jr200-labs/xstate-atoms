@@ -29,20 +29,20 @@
   "keywords": [],
   "packageManager": "pnpm@10.33.0",
   "peerDependencies": {
-    "@duckdb/duckdb-wasm": "^1.33.1-dev45.0",
+    "@duckdb/duckdb-wasm": ">=1.33.1-dev42.0 <2",
     "@nats-io/jetstream": "^3.3.1",
     "@nats-io/kv": "^3.3.1",
     "@nats-io/nats-core": "^3.3.1",
     "@nats-io/obj": "^3.3.1",
     "@opentelemetry/api": "^1.9.0",
-    "apache-arrow": "^21.1.0",
+    "apache-arrow": ">=21 <22",
     "jotai": "^2.19.1",
     "jotai-family": "^1.0.1",
     "jotai-xstate": "^0.6.1",
     "xstate": "^5.30.0"
   },
   "dependencies": {
-    "@jr200-labs/xstate-duckdb": "^0.4.0",
+    "@jr200-labs/xstate-duckdb": "^1.0.0",
     "@jr200-labs/xstate-nats": "^0.7.0",
     "@js-temporal/polyfill": "^0.5.1",
     "@types/js-yaml": "^4.0.9"
