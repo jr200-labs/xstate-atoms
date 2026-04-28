@@ -27,7 +27,7 @@
     "prepublishOnly": "pnpm build && pnpm test"
   },
   "keywords": [],
-  "packageManager": "pnpm@10.33.0",
+  "packageManager": "pnpm@10.33.2",
   "peerDependencies": {
     "@duckdb/duckdb-wasm": ">=1.33.1-dev42.0 <2",
     "@nats-io/jetstream": "^3.3.1",
@@ -39,26 +39,26 @@
     "jotai": "^2.19.1",
     "jotai-family": "^1.0.1",
     "jotai-xstate": "^0.6.1",
-    "xstate": "^5.30.0"
+    "xstate": "^5.31.0"
   },
   "dependencies": {
     "@jr200-labs/xstate-duckdb": "^1.0.0",
-    "@jr200-labs/xstate-nats": "^0.7.0",
+    "@jr200-labs/xstate-nats": "^0.8.0",
     "@js-temporal/polyfill": "^0.5.1",
     "@types/js-yaml": "^4.0.9"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@statelyai/inspect": "^0.7.1",
-    "@vitest/coverage-v8": "^4.1.4",
-    "eslint": "^10.2.0",
+    "@vitest/coverage-v8": "^4.1.5",
+    "eslint": "^10.2.1",
     "globals": "^17.5.0",
     "husky": "^9.1.7",
     "jotai-family": "^1.0.1",
     "prettier": "^3.8.3",
-    "syncpack": "^14.3.0",
-    "typescript": "^6.0.2",
-    "typescript-eslint": "^8.58.2",
-    "vitest": "^4.1.4"
+    "syncpack": "^14.3.1",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.59.1",
+    "vitest": "^4.1.5"
   }
 }
