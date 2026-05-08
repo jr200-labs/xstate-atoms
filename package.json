@@ -27,7 +27,7 @@
     "prepublishOnly": "pnpm build && pnpm test"
   },
   "keywords": [],
-  "packageManager": "pnpm@10.33.0",
+  "packageManager": "pnpm@11.0.8",
   "peerDependencies": {
     "@duckdb/duckdb-wasm": ">=1.33.1-dev42.0 <2",
     "@nats-io/jetstream": "^3.3.1",
