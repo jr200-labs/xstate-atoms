@@ -26,5 +26,7 @@ export const natsKvSnapshotAtom = atomWithActorSnapshot(get => {
 })
 natsKvSnapshotAtom.debugLabel = 'xa.natsKvSnapshotAtom'
 
-export const natsConnectionHandleAtom: Atom<NatsContext['connection']> = atom(get => get(natsSnapshotAtom).context.connection)
+export const natsConnectionHandleAtom: Atom<NatsContext['connection']> = atom(
+  get => get(natsSnapshotAtom).context.connection
+)
 natsConnectionHandleAtom.debugLabel = 'xa.natsConnectionHandleAtom'
