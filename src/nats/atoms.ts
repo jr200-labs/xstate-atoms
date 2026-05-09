@@ -1,7 +1,7 @@
 import { atomWithActor, atomWithActorSnapshot } from 'jotai-xstate'
 import { natsMachine, type NatsContext, type NatsEvent } from '@jr200-labs/xstate-nats'
 import { Actor, AnyActor, StateMachine } from 'xstate'
-import { atom, WritableAtom } from 'jotai'
+import { atom, type Atom, WritableAtom } from 'jotai'
 
 type NatsMachine = StateMachine<NatsContext, NatsEvent, any, any, any, any, any, any, any, any, any, any, any, any>
 
@@ -26,5 +26,7 @@ export const natsKvSnapshotAtom = atomWithActorSnapshot(get => {
 })
 natsKvSnapshotAtom.debugLabel = 'xa.natsKvSnapshotAtom'
 
-export const natsConnectionHandleAtom = atom(get => get(natsSnapshotAtom).context.connection)
+export const natsConnectionHandleAtom: Atom<NatsContext['connection']> = atom(
+  get => get(natsSnapshotAtom).context.connection
+)
 natsConnectionHandleAtom.debugLabel = 'xa.natsConnectionHandleAtom'
