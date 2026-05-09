@@ -12,8 +12,8 @@ importers:
         specifier: '>=1.33.1-dev42.0 <2'
         version: 1.33.1-dev42.0
       '@jr200-labs/xstate-duckdb':
-        specifier: ^1.1.0
-        version: 1.1.0(@duckdb/duckdb-wasm@1.33.1-dev42.0)(@opentelemetry/api@1.9.1)(apache-arrow@21.1.0)(react@19.2.4)
+        specifier: ^1.1.1
+        version: 1.1.1(@duckdb/duckdb-wasm@1.33.1-dev42.0)(@opentelemetry/api@1.9.1)(apache-arrow@21.1.0)(react@19.2.4)
       '@jr200-labs/xstate-nats':
         specifier: ^0.9.0
         version: 0.9.0(@opentelemetry/api@1.9.1)
@@ -101,16 +101,16 @@ importers:
         version: 0.5.1
       '@nats-io/jetstream':
         specifier: ^3.3.1
-        version: 3.3.1
+        version: 3.4.0
       '@nats-io/kv':
         specifier: ^3.3.1
-        version: 3.3.1
+        version: 3.4.0
       '@nats-io/nats-core':
         specifier: ^3.3.1
-        version: 3.3.1
+        version: 3.4.0
       '@nats-io/obj':
         specifier: ^3.3.1
-        version: 3.3.1
+        version: 3.4.0
       apache-arrow:
         specifier: ^21.1.0
         version: 21.1.0
@@ -290,8 +290,8 @@ packages:
     resolution: {integrity: sha512-DmdYgtezMkh3cpU8/1uyXakv3tJRcmcXxBOcO0tbaozPwpmh4YMsnWrQm9ZmZMfa5ocbxzbFk6O4bDPEc/iAnA==}
     engines: {node: ^18.14.0 || ^20.0.0 || ^22.0.0 || >=24.0.0}
 
-  '@jr200-labs/xstate-duckdb@1.1.0':
-    resolution: {integrity: sha512-1xb8R9Hf9MF5lKUo5Vak/lPhNlHpCyxSk1NXDhgj9kDtc4oyp+idFq0Tfeucsk1t22E7HsuWHAjDjztn3XIqPg==}
+  '@jr200-labs/xstate-duckdb@1.1.1':
+    resolution: {integrity: sha512-Go0u+42OI58s5MSoAm2p3IE1b9C+9sVGCIxtkJFqrqnXvwyU5I0Z4Dr1CD/Z5S/0oXTXbJzGdJOy7PkGAIS9tw==}
     peerDependencies:
       '@duckdb/duckdb-wasm': '>=1.33.1-dev42.0 <2'
       '@opentelemetry/api': ^1.9.1
@@ -342,20 +342,11 @@ packages:
       '@emnapi/core': ^1.7.1
       '@emnapi/runtime': ^1.7.1
 
-  '@nats-io/jetstream@3.3.1':
-    resolution: {integrity: sha512-oTIxM47pQfv4zCMlLN7FtARxSclMlUUPPn9I3VxRwMH+N2jkj1WCApu+tSL778KuljxfG8txi/MPwoWSXqbbQQ==}
-
   '@nats-io/jetstream@3.4.0':
     resolution: {integrity: sha512-GzHQodNJ942+R5LRb8PuZ5ugVWVWMRiufxUYLLVWkXKfwDXYN+Owo0d7L/b9O7BPyrbYD7jQWAC6+ZVuXa9Gyw==}
 
-  '@nats-io/kv@3.3.1':
-    resolution: {integrity: sha512-KqFTRNxDFbeZ5rMG/2dOYVYRujd6gzSfDm0Eo9r5GMbSDT7waNzD6Hz9hOqXwBL7/72F/fJ7+NfPVD9KWq37ew==}
-
   '@nats-io/kv@3.4.0':
     resolution: {integrity: sha512-168pcRJxWcIRHwdyczI3DaGk5r3CAj3CyKXuk4Nmx5KKj7N1znQOJPIxCoV0TPlAvoTidVb7eBv41J9imapMeQ==}
-
-  '@nats-io/nats-core@3.3.1':
-    resolution: {integrity: sha512-myFXGTo4cCfKrsLDjkoEz7FjjjvSfBRjun7Qx3n3Z5OzW4JUY8Ou7VQsGAdXLQxHN3ae/XNXvmXxshDoFPex4w==}
 
   '@nats-io/nats-core@3.4.0':
     resolution: {integrity: sha512-QMDM86EUNm+wudlKC67HLar/KHHQUvJGLfb4jbahje3pUk3K9afeck9fwsxBZF0eUFox6T/TA6m/t+lQqf+QsQ==}
@@ -364,16 +355,9 @@ packages:
     resolution: {integrity: sha512-JVt56GuE6Z89KUkI4TXUbSI9fmIfAmk6PMPknijmuL72GcD+UgIomTcRWiNvvJKxA01sBbmIPStqJs5cMRBC3A==}
     engines: {node: '>=18.0.0'}
 
-  '@nats-io/nuid@2.0.3':
-    resolution: {integrity: sha512-TpA3HEBna/qMVudy+3HZr5M3mo/L1JPofpVT4t0HkFGkz2Cn9wrlrQC8tvR8Md5Oa9//GtGG26eN0qEWF5Vqew==}
-    engines: {node: '>= 18.x'}
-
   '@nats-io/nuid@3.0.0':
     resolution: {integrity: sha512-QbXZDrxmYlrn5AD06gYcUTmEHwxn96HBQMIk7XTjDlEcx6FPzVBBPjp4AMRh1lEv6B4iJ6Xb/Uz61JugPXFRQg==}
     engines: {node: '>= 22.x'}
-
-  '@nats-io/obj@3.3.1':
-    resolution: {integrity: sha512-sGQbVdCE1TeAWyNT1o5ynPUo618J1d7gVtKnlbH+X/0hucEHTSYjqNB+6ZfGdVfQkoQISzjLsB7xvG7nqunPmg==}
 
   '@nats-io/obj@3.4.0':
     resolution: {integrity: sha512-zQRyrbxVtapKtqlxcA7qiMBN5aoo1aqSLNHyTZY9d6xBmBAYsw7sfYfSdHSguiR7GXtEjFgFnynTcv7Rw9MIrg==}
@@ -1917,7 +1901,7 @@ snapshots:
     dependencies:
       '@sinclair/typebox': 0.34.40
 
-  '@jr200-labs/xstate-duckdb@1.1.0(@duckdb/duckdb-wasm@1.33.1-dev42.0)(@opentelemetry/api@1.9.1)(apache-arrow@21.1.0)(react@19.2.4)':
+  '@jr200-labs/xstate-duckdb@1.1.1(@duckdb/duckdb-wasm@1.33.1-dev42.0)(@opentelemetry/api@1.9.1)(apache-arrow@21.1.0)(react@19.2.4)':
     dependencies:
       '@duckdb/duckdb-wasm': 1.33.1-dev42.0
       '@opentelemetry/api': 1.9.1
@@ -1930,10 +1914,10 @@ snapshots:
 
   '@jr200-labs/xstate-nats@0.9.0(@opentelemetry/api@1.9.1)':
     dependencies:
-      '@nats-io/jetstream': 3.3.1
-      '@nats-io/kv': 3.3.1
-      '@nats-io/nats-core': 3.3.1
-      '@nats-io/obj': 3.3.1
+      '@nats-io/jetstream': 3.4.0
+      '@nats-io/kv': 3.4.0
+      '@nats-io/nats-core': 3.4.0
+      '@nats-io/obj': 3.4.0
       '@opentelemetry/api': 1.9.1
       xstate: 5.31.0
 
@@ -1984,28 +1968,14 @@ snapshots:
       '@tybys/wasm-util': 0.10.1
     optional: true
 
-  '@nats-io/jetstream@3.3.1':
-    dependencies:
-      '@nats-io/nats-core': 3.3.1
-
   '@nats-io/jetstream@3.4.0':
     dependencies:
       '@nats-io/nats-core': 3.4.0
-
-  '@nats-io/kv@3.3.1':
-    dependencies:
-      '@nats-io/jetstream': 3.3.1
-      '@nats-io/nats-core': 3.3.1
 
   '@nats-io/kv@3.4.0':
     dependencies:
       '@nats-io/jetstream': 3.4.0
       '@nats-io/nats-core': 3.4.0
-
-  '@nats-io/nats-core@3.3.1':
-    dependencies:
-      '@nats-io/nkeys': 2.0.3
-      '@nats-io/nuid': 2.0.3
 
   '@nats-io/nats-core@3.4.0':
     dependencies:
@@ -2016,15 +1986,7 @@ snapshots:
     dependencies:
       tweetnacl: 1.0.3
 
-  '@nats-io/nuid@2.0.3': {}
-
   '@nats-io/nuid@3.0.0': {}
-
-  '@nats-io/obj@3.3.1':
-    dependencies:
-      '@nats-io/jetstream': 3.3.1
-      '@nats-io/nats-core': 3.3.1
-      js-sha256: 0.11.1
 
   '@nats-io/obj@3.4.0':
     dependencies:
