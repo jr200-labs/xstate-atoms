@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.0](https://github.com/jr200-labs/xstate-atoms/compare/v0.4.0...v0.5.0) (2026-04-24)
+
+
+### Features
+
+* migrate syncpack to shared base (JRL-30) ([#23](https://github.com/jr200-labs/xstate-atoms/issues/23)) ([36f6aca](https://github.com/jr200-labs/xstate-atoms/commit/36f6aca5142e9942692ce5a17d468b5bc49f4032))
+
 ## [0.4.0](https://github.com/jr200-labs/xstate-atoms/compare/v0.3.0...v0.4.0) (2026-04-23)
 
 
