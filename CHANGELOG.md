@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.5.3](https://github.com/jr200-labs/xstate-atoms/compare/v0.5.2...v0.5.3) (2026-05-18)
+
+
+### Bug Fixes
+
+* **deps:** update actions/create-github-app-token action to v3.2.0 ([#37](https://github.com/jr200-labs/xstate-atoms/issues/37)) ([88146c4](https://github.com/jr200-labs/xstate-atoms/commit/88146c45af0edd225721eaa5ce9e10100072d2a1))
+* **deps:** update all non-major dependencies ([#36](https://github.com/jr200-labs/xstate-atoms/issues/36)) ([8ee9c57](https://github.com/jr200-labs/xstate-atoms/commit/8ee9c57ad9ebec56c4e8303b6bd6f751089dad8f))
+* **deps:** update all non-major dependencies ([#39](https://github.com/jr200-labs/xstate-atoms/issues/39)) ([7d768e0](https://github.com/jr200-labs/xstate-atoms/commit/7d768e082c92ce150f6085c1c7c99123fce4b281))
+
 ## [0.5.2](https://github.com/jr200-labs/xstate-atoms/compare/v0.5.1...v0.5.2) (2026-05-09)
 
 
