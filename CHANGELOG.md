@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.4](https://github.com/jr200-labs/xstate-atoms/compare/v0.5.3...v0.5.4) (2026-05-23)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#40](https://github.com/jr200-labs/xstate-atoms/issues/40)) ([7050e16](https://github.com/jr200-labs/xstate-atoms/commit/7050e169251afd05188bbe68c2ce2d34fb2342c1))
+
 ## [0.5.3](https://github.com/jr200-labs/xstate-atoms/compare/v0.5.2...v0.5.3) (2026-05-18)
 
 
