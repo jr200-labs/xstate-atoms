@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.5.7](https://github.com/jr200-labs/xstate-atoms/compare/v0.5.6...v0.5.7) (2026-06-07)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies to ^0.9.9 ([#53](https://github.com/jr200-labs/xstate-atoms/issues/53)) ([6173a4f](https://github.com/jr200-labs/xstate-atoms/commit/6173a4f8018abacad9d1bd6ba8359c3aa5d6e411))
+* **deps:** update all non-major dependencies to shared-v0.1.7 ([#50](https://github.com/jr200-labs/xstate-atoms/issues/50)) ([97b0535](https://github.com/jr200-labs/xstate-atoms/commit/97b0535d4a1c9ba774df572f8e256f4dea0488cd))
+
 ## [0.5.6](https://github.com/jr200-labs/xstate-atoms/compare/v0.5.5...v0.5.6) (2026-06-07)
 
 
