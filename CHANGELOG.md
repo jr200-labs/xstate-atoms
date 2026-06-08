@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.13](https://github.com/jr200-labs/xstate-atoms/compare/v0.5.12...v0.5.13) (2026-06-08)
+
+
+### Features
+
+* expose nats traffic atoms ([#62](https://github.com/jr200-labs/xstate-atoms/issues/62)) ([bc2d376](https://github.com/jr200-labs/xstate-atoms/commit/bc2d376d4a35a24fc04fa05c99f5572816565b17))
+
 ## [0.5.12](https://github.com/jr200-labs/xstate-atoms/compare/v0.5.11...v0.5.12) (2026-06-08)
 
 
