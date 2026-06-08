@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.15](https://github.com/jr200-labs/xstate-atoms/compare/v0.5.14...v0.5.15) (2026-06-08)
+
+
+### Features
+
+* add http traffic atoms ([#69](https://github.com/jr200-labs/xstate-atoms/issues/69)) ([2d405ed](https://github.com/jr200-labs/xstate-atoms/commit/2d405ed581b8ed1f435f0031536bbb3ad07bc5cb))
+
 ## [0.5.14](https://github.com/jr200-labs/xstate-atoms/compare/v0.5.13...v0.5.14) (2026-06-08)
 
 
