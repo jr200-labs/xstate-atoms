@@ -2,6 +2,7 @@ export * from './duckdb/atoms'
 export * from './duckdb/query'
 
 export * from './nats/atoms'
+export * from './http/atoms'
 export * from './time/atoms'
 
 export { type TimeGranularity } from './time/types'
