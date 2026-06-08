@@ -1,7 +1,16 @@
 import { atomWithActor, atomWithActorSnapshot } from 'jotai-xstate'
 import { duckdbMachine } from '@jr200-labs/xstate-duckdb'
 import { AnyActor } from 'xstate'
-import { atom, WritableAtom } from 'jotai'
+import { atom, type Atom, WritableAtom } from 'jotai'
+import {
+  createEmptyDuckDbLoadMetrics,
+  duckDbLoadMetricsFromSnapshot,
+  type DuckDbLoadMetrics,
+  type DuckDbLoadMetricsResetEvent,
+} from './loadMetrics'
+
+export { createEmptyDuckDbLoadMetrics, duckDbLoadMetricsFromSnapshot } from './loadMetrics'
+export type { DuckDbLoadMetricBucket, DuckDbLoadMetrics, DuckDbLoadMetricsResetEvent } from './loadMetrics'
 
 export const duckdbActorAtom: WritableAtom<any, any, any> = atomWithActor(duckdbMachine)
 duckdbActorAtom.debugLabel = 'xa.duckdbActorAtom'
@@ -26,3 +35,25 @@ duckdbCatalogLoadedVersionsAtom.debugLabel = 'xa.duckdbCatalogLoadedVersionsAtom
 
 export const duckdbHandleAtom = atom(get => get(duckdbSnapshotAtom).context.duckDbHandle)
 duckdbHandleAtom.debugLabel = 'xa.duckdbHandleAtom'
+
+export const duckdbLoadMetricsAtom: Atom<DuckDbLoadMetrics> = atom(get => {
+  const catalogSnapshot = get(duckdbCatalogSnapshotAtom)
+  if (!catalogSnapshot) return createEmptyDuckDbLoadMetrics()
+  return duckDbLoadMetricsFromSnapshot(catalogSnapshot)
+})
+duckdbLoadMetricsAtom.debugLabel = 'xa.duckdbLoadMetricsAtom'
+
+export const duckdbEncodedBytesAtom: Atom<number> = atom(get => get(duckdbLoadMetricsAtom).encodedBytes)
+duckdbEncodedBytesAtom.debugLabel = 'xa.duckdbEncodedBytesAtom'
+
+export const duckdbDecodedBytesAtom: Atom<number> = atom(get => get(duckdbLoadMetricsAtom).decodedBytes)
+duckdbDecodedBytesAtom.debugLabel = 'xa.duckdbDecodedBytesAtom'
+
+export const duckdbLoadedBytesAtom: Atom<number> = atom(get => get(duckdbLoadMetricsAtom).loadedBytes)
+duckdbLoadedBytesAtom.debugLabel = 'xa.duckdbLoadedBytesAtom'
+
+export const resetDuckDbLoadMetricsAtom = atom(null, (_get, set, tableSpecName?: string) => {
+  const event: DuckDbLoadMetricsResetEvent = { type: 'CATALOG.METRICS.RESET_LOADS', tableSpecName }
+  set(duckdbActorAtom, event)
+})
+resetDuckDbLoadMetricsAtom.debugLabel = 'xa.resetDuckDbLoadMetricsAtom'
