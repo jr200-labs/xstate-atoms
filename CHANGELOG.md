@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.5.14](https://github.com/jr200-labs/xstate-atoms/compare/v0.5.13...v0.5.14) (2026-06-08)
+
+
+### Features
+
+* expose duckdb load metrics atoms ([#66](https://github.com/jr200-labs/xstate-atoms/issues/66)) ([c7def33](https://github.com/jr200-labs/xstate-atoms/commit/c7def33b01351c2527c83908a8aa92c0298851d8))
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies to ^1.2.0 ([#67](https://github.com/jr200-labs/xstate-atoms/issues/67)) ([873582d](https://github.com/jr200-labs/xstate-atoms/commit/873582d86ac57f115fe0a3a52d4cdbd98698924b))
+
 ## [0.5.13](https://github.com/jr200-labs/xstate-atoms/compare/v0.5.12...v0.5.13) (2026-06-08)
 
 
