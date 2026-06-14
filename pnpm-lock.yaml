@@ -12,11 +12,11 @@ importers:
         specifier: '>=1.33.1-dev42.0 <2'
         version: 1.33.1-dev42.0
       '@jr200-labs/xstate-duckdb':
-        specifier: ^1.2.0
-        version: 1.2.0(@duckdb/duckdb-wasm@1.33.1-dev42.0)(@opentelemetry/api@1.9.1)(apache-arrow@21.1.0)(react@19.2.4)
+        specifier: ^1.2.1
+        version: 1.2.1(@duckdb/duckdb-wasm@1.33.1-dev42.0)(@opentelemetry/api@1.9.1)(apache-arrow@21.1.0)(react@19.2.4)
       '@jr200-labs/xstate-nats':
-        specifier: ^0.9.14
-        version: 0.9.14(@opentelemetry/api@1.9.1)
+        specifier: ^0.9.15
+        version: 0.9.15(@opentelemetry/api@1.9.1)
       '@js-temporal/polyfill':
         specifier: ^0.5.1
         version: 0.5.1
@@ -42,27 +42,27 @@ importers:
         specifier: '>=21 <22'
         version: 21.1.0
       jotai:
-        specifier: ^2.20.0
-        version: 2.20.0(@types/react@19.2.14)(react@19.2.4)
+        specifier: ^2.20.1
+        version: 2.20.1(@types/react@19.2.14)(react@19.2.4)
       jotai-xstate:
         specifier: ^0.6.1
-        version: 0.6.1(jotai@2.20.0(@types/react@19.2.14)(react@19.2.4))(xstate@5.32.0)
+        version: 0.6.1(jotai@2.20.1(@types/react@19.2.14)(react@19.2.4))(xstate@5.32.1)
       xstate:
-        specifier: ^5.32.0
-        version: 5.32.0
+        specifier: ^5.32.1
+        version: 5.32.1
     devDependencies:
       '@eslint/js':
         specifier: ^10.0.1
-        version: 10.0.1(eslint@10.4.1)
+        version: 10.0.1(eslint@10.5.0)
       '@statelyai/inspect':
         specifier: ^0.7.1
-        version: 0.7.1(xstate@5.32.0)
+        version: 0.7.1(xstate@5.32.1)
       '@vitest/coverage-v8':
         specifier: ^4.1.8
         version: 4.1.8(vitest@4.1.8)
       eslint:
-        specifier: ^10.4.1
-        version: 10.4.1
+        specifier: ^10.5.0
+        version: 10.5.0
       globals:
         specifier: ^17.6.0
         version: 17.6.0
@@ -71,7 +71,7 @@ importers:
         version: 9.1.7
       jotai-family:
         specifier: ^1.0.2
-        version: 1.0.2(jotai@2.20.0(@types/react@19.2.14)(react@19.2.4))
+        version: 1.0.2(jotai@2.20.1(@types/react@19.2.14)(react@19.2.4))
       prettier:
         specifier: ^3.8.4
         version: 3.8.4
@@ -83,7 +83,7 @@ importers:
         version: 6.0.3
       typescript-eslint:
         specifier: ^8.61.0
-        version: 8.61.0(eslint@10.4.1)(typescript@6.0.3)
+        version: 8.61.0(eslint@10.5.0)(typescript@6.0.3)
       vitest:
         specifier: ^4.1.8
         version: 4.1.8(@opentelemetry/api@1.9.1)(@types/node@24.3.0)(@vitest/coverage-v8@4.1.8)(vite@8.0.7(@types/node@24.3.0))
@@ -119,13 +119,13 @@ importers:
         version: 0.1.39(@duckdb/duckdb-wasm@1.33.1-dev42.0)(apache-arrow@21.1.0)(react@19.2.4)
       jotai:
         specifier: ^2.19.1
-        version: 2.20.0(@types/react@19.2.14)(react@19.2.4)
+        version: 2.20.1(@types/react@19.2.14)(react@19.2.4)
       jotai-devtools:
         specifier: ^0.13.1
-        version: 0.13.1(@types/react@19.2.14)(jotai@2.20.0(@types/react@19.2.14)(react@19.2.4))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(redux@5.0.1)
+        version: 0.13.1(@types/react@19.2.14)(jotai@2.20.1(@types/react@19.2.14)(react@19.2.4))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(redux@5.0.1)
       jotai-xstate:
         specifier: ^0.6.1
-        version: 0.6.1(jotai@2.20.0(@types/react@19.2.14)(react@19.2.4))(xstate@5.32.0)
+        version: 0.6.1(jotai@2.20.1(@types/react@19.2.14)(react@19.2.4))(xstate@5.32.1)
       js-yaml:
         specifier: ^4.1.1
         version: 4.1.1
@@ -140,7 +140,7 @@ importers:
         version: 19.2.4(react@19.2.4)
       xstate:
         specifier: ^5.30.0
-        version: 5.32.0
+        version: 5.32.1
     devDependencies:
       '@types/react':
         specifier: ^19.2.14
@@ -290,15 +290,15 @@ packages:
     resolution: {integrity: sha512-DmdYgtezMkh3cpU8/1uyXakv3tJRcmcXxBOcO0tbaozPwpmh4YMsnWrQm9ZmZMfa5ocbxzbFk6O4bDPEc/iAnA==}
     engines: {node: ^18.14.0 || ^20.0.0 || ^22.0.0 || >=24.0.0}
 
-  '@jr200-labs/xstate-duckdb@1.2.0':
-    resolution: {integrity: sha512-2Xs7auSeknejyjOxtg8qq7WyIrjLtDl4OVs3bbiFW4L68asHjrlHLMoRqCzi49y61dPjXlycovPKl7Ykb0ULmA==}
+  '@jr200-labs/xstate-duckdb@1.2.1':
+    resolution: {integrity: sha512-d2J8d5tC5FHnqigidOwKzzG9sxWFq90ObUX9nVgH6wlxW5S4gjpMEHSdIngRakMaEMeEdvYG+bkdERzFjivrpg==}
     peerDependencies:
       '@duckdb/duckdb-wasm': '>=1.33.1-dev42.0 <2'
       '@opentelemetry/api': ^1.9.1
       apache-arrow: '>=21 <22'
 
-  '@jr200-labs/xstate-nats@0.9.14':
-    resolution: {integrity: sha512-qGq3mCvNrqljjI3XGhUgz3mDDFh4hg0YpMZ3otBUgZOcu28elIScfgKluTXYey273UOMIrksHfJaqppOmaaeZw==}
+  '@jr200-labs/xstate-nats@0.9.15':
+    resolution: {integrity: sha512-JW1vO0qReS/LwQFuWfG5FMfGvz45D6h4XVG8yJ1HBNqSqrNUgL8LrOu1JwCTMRbPYLXYgU7AkXMv5qaFze1zKA==}
     peerDependencies:
       '@opentelemetry/api': ^1.9.1
 
@@ -869,8 +869,8 @@ packages:
     resolution: {integrity: sha512-tD40eHxA35h0PEIZNeIjkHoDR4YjjJp34biM0mDvplBe//mB+IHCqHDGV7pxF+7MklTvighcCPPZC7ynWyjdTA==}
     engines: {node: ^20.19.0 || ^22.13.0 || >=24}
 
-  eslint@10.4.1:
-    resolution: {integrity: sha512-AyIKhnOBuOAdueD7RB3xB+YeAWScb9jHsJBgH2Hcde8InP5JYhqrRR6iTMHyTEwgENK54Cp44e4v8BwNhsuHuw==}
+  eslint@10.5.0:
+    resolution: {integrity: sha512-1y+7C+vi12bUK1IpZeaV3gsH9fHLBmPvYmPx42pvT/E9yG0IC8g3PUZZgp0+JLJl7ZDK0flc2gc+Aw9dpCvIsQ==}
     engines: {node: ^20.19.0 || ^22.13.0 || >=24}
     hasBin: true
     peerDependencies:
@@ -1096,8 +1096,8 @@ packages:
       jotai: '>=2.0.0'
       xstate: '>=5.0.0'
 
-  jotai@2.20.0:
-    resolution: {integrity: sha512-b5GAqgmXmXzB4WPaTH26ppk9Sl7AA9WSQX7yfdM+gJ1rFROiWcVbi97gFuN/yVCojOcbcvop2sfLL+fjxW0JVg==}
+  jotai@2.20.1:
+    resolution: {integrity: sha512-dnuKfU/GLi8B28RRMjQ3AfoN7kfzP8o41+AX2FmITZqEMY8PHnjABq+VkEooomLwYaGjda+pgy0yFSjaHX/ZPg==}
     engines: {node: '>=12.20.0'}
     peerDependencies:
       '@babel/core': '>=7.0.0'
@@ -1778,8 +1778,8 @@ packages:
       utf-8-validate:
         optional: true
 
-  xstate@5.32.0:
-    resolution: {integrity: sha512-zsk73aWGmxn9z34P0kbiod5JwTvdYRW3+IDxITq8sd9+VWwMyW7BUzpplnYy9mIEXa6V8IMDv7Hy4m0mhT5+2Q==}
+  xstate@5.32.1:
+    resolution: {integrity: sha512-IGX9q5vEOplWjVq79edfgjJfVV/lXCup9p/fQGgUabAveZrlRwWJ/mC2iZEE7wswXbWITBCoS7gmoFfcuWAwsQ==}
 
   yocto-queue@0.1.0:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
@@ -1825,9 +1825,9 @@ snapshots:
       tslib: 2.8.1
     optional: true
 
-  '@eslint-community/eslint-utils@4.9.1(eslint@10.4.1)':
+  '@eslint-community/eslint-utils@4.9.1(eslint@10.5.0)':
     dependencies:
-      eslint: 10.4.1
+      eslint: 10.5.0
       eslint-visitor-keys: 3.4.3
 
   '@eslint-community/regexpp@4.12.2': {}
@@ -1848,9 +1848,9 @@ snapshots:
     dependencies:
       '@types/json-schema': 7.0.15
 
-  '@eslint/js@10.0.1(eslint@10.4.1)':
+  '@eslint/js@10.0.1(eslint@10.5.0)':
     optionalDependencies:
-      eslint: 10.4.1
+      eslint: 10.5.0
 
   '@eslint/object-schema@3.0.5': {}
 
@@ -1901,25 +1901,25 @@ snapshots:
     dependencies:
       '@sinclair/typebox': 0.34.40
 
-  '@jr200-labs/xstate-duckdb@1.2.0(@duckdb/duckdb-wasm@1.33.1-dev42.0)(@opentelemetry/api@1.9.1)(apache-arrow@21.1.0)(react@19.2.4)':
+  '@jr200-labs/xstate-duckdb@1.2.1(@duckdb/duckdb-wasm@1.33.1-dev42.0)(@opentelemetry/api@1.9.1)(apache-arrow@21.1.0)(react@19.2.4)':
     dependencies:
       '@duckdb/duckdb-wasm': 1.33.1-dev42.0
       '@opentelemetry/api': 1.9.1
       apache-arrow: 21.1.0
       duckdb-wasm-kit: 0.1.39(@duckdb/duckdb-wasm@1.33.1-dev42.0)(apache-arrow@21.1.0)(react@19.2.4)
       pako: 2.1.0
-      xstate: 5.32.0
+      xstate: 5.32.1
     transitivePeerDependencies:
       - react
 
-  '@jr200-labs/xstate-nats@0.9.14(@opentelemetry/api@1.9.1)':
+  '@jr200-labs/xstate-nats@0.9.15(@opentelemetry/api@1.9.1)':
     dependencies:
       '@nats-io/jetstream': 3.4.0
       '@nats-io/kv': 3.4.0
       '@nats-io/nats-core': 3.4.0
       '@nats-io/obj': 3.4.0
       '@opentelemetry/api': 1.9.1
-      xstate: 5.32.0
+      xstate: 5.32.1
 
   '@jridgewell/resolve-uri@3.1.2': {}
 
@@ -2061,7 +2061,7 @@ snapshots:
 
   '@standard-schema/spec@1.1.0': {}
 
-  '@statelyai/inspect@0.7.1(xstate@5.32.0)':
+  '@statelyai/inspect@0.7.1(xstate@5.32.1)':
     dependencies:
       fast-safe-stringify: 2.1.1
       isomorphic-ws: 5.0.0(ws@8.20.0)
@@ -2070,7 +2070,7 @@ snapshots:
       superjson: 1.13.3
       uuid: 9.0.1
       ws: 8.20.0
-      xstate: 5.32.0
+      xstate: 5.32.1
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
@@ -2122,15 +2122,15 @@ snapshots:
     dependencies:
       csstype: 3.2.3
 
-  '@typescript-eslint/eslint-plugin@8.61.0(@typescript-eslint/parser@8.61.0(eslint@10.4.1)(typescript@6.0.3))(eslint@10.4.1)(typescript@6.0.3)':
+  '@typescript-eslint/eslint-plugin@8.61.0(@typescript-eslint/parser@8.61.0(eslint@10.5.0)(typescript@6.0.3))(eslint@10.5.0)(typescript@6.0.3)':
     dependencies:
       '@eslint-community/regexpp': 4.12.2
-      '@typescript-eslint/parser': 8.61.0(eslint@10.4.1)(typescript@6.0.3)
+      '@typescript-eslint/parser': 8.61.0(eslint@10.5.0)(typescript@6.0.3)
       '@typescript-eslint/scope-manager': 8.61.0
-      '@typescript-eslint/type-utils': 8.61.0(eslint@10.4.1)(typescript@6.0.3)
-      '@typescript-eslint/utils': 8.61.0(eslint@10.4.1)(typescript@6.0.3)
+      '@typescript-eslint/type-utils': 8.61.0(eslint@10.5.0)(typescript@6.0.3)
+      '@typescript-eslint/utils': 8.61.0(eslint@10.5.0)(typescript@6.0.3)
       '@typescript-eslint/visitor-keys': 8.61.0
-      eslint: 10.4.1
+      eslint: 10.5.0
       ignore: 7.0.5
       natural-compare: 1.4.0
       ts-api-utils: 2.5.0(typescript@6.0.3)
@@ -2138,14 +2138,14 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@typescript-eslint/parser@8.61.0(eslint@10.4.1)(typescript@6.0.3)':
+  '@typescript-eslint/parser@8.61.0(eslint@10.5.0)(typescript@6.0.3)':
     dependencies:
       '@typescript-eslint/scope-manager': 8.61.0
       '@typescript-eslint/types': 8.61.0
       '@typescript-eslint/typescript-estree': 8.61.0(typescript@6.0.3)
       '@typescript-eslint/visitor-keys': 8.61.0
       debug: 4.4.3
-      eslint: 10.4.1
+      eslint: 10.5.0
       typescript: 6.0.3
     transitivePeerDependencies:
       - supports-color
@@ -2168,13 +2168,13 @@ snapshots:
     dependencies:
       typescript: 6.0.3
 
-  '@typescript-eslint/type-utils@8.61.0(eslint@10.4.1)(typescript@6.0.3)':
+  '@typescript-eslint/type-utils@8.61.0(eslint@10.5.0)(typescript@6.0.3)':
     dependencies:
       '@typescript-eslint/types': 8.61.0
       '@typescript-eslint/typescript-estree': 8.61.0(typescript@6.0.3)
-      '@typescript-eslint/utils': 8.61.0(eslint@10.4.1)(typescript@6.0.3)
+      '@typescript-eslint/utils': 8.61.0(eslint@10.5.0)(typescript@6.0.3)
       debug: 4.4.3
-      eslint: 10.4.1
+      eslint: 10.5.0
       ts-api-utils: 2.5.0(typescript@6.0.3)
       typescript: 6.0.3
     transitivePeerDependencies:
@@ -2197,13 +2197,13 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@typescript-eslint/utils@8.61.0(eslint@10.4.1)(typescript@6.0.3)':
+  '@typescript-eslint/utils@8.61.0(eslint@10.5.0)(typescript@6.0.3)':
     dependencies:
-      '@eslint-community/eslint-utils': 4.9.1(eslint@10.4.1)
+      '@eslint-community/eslint-utils': 4.9.1(eslint@10.5.0)
       '@typescript-eslint/scope-manager': 8.61.0
       '@typescript-eslint/types': 8.61.0
       '@typescript-eslint/typescript-estree': 8.61.0(typescript@6.0.3)
-      eslint: 10.4.1
+      eslint: 10.5.0
       typescript: 6.0.3
     transitivePeerDependencies:
       - supports-color
@@ -2496,9 +2496,9 @@ snapshots:
 
   eslint-visitor-keys@5.0.1: {}
 
-  eslint@10.4.1:
+  eslint@10.5.0:
     dependencies:
-      '@eslint-community/eslint-utils': 4.9.1(eslint@10.4.1)
+      '@eslint-community/eslint-utils': 4.9.1(eslint@10.5.0)
       '@eslint-community/regexpp': 4.12.2
       '@eslint/config-array': 0.23.5
       '@eslint/config-helpers': 0.6.0
@@ -2683,7 +2683,7 @@ snapshots:
 
   javascript-stringify@2.1.0: {}
 
-  jotai-devtools@0.13.1(@types/react@19.2.14)(jotai@2.20.0(@types/react@19.2.14)(react@19.2.4))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(redux@5.0.1):
+  jotai-devtools@0.13.1(@types/react@19.2.14)(jotai@2.20.1(@types/react@19.2.14)(react@19.2.4))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(redux@5.0.1):
     dependencies:
       '@mantine/code-highlight': 7.17.4(@mantine/core@7.17.4(@mantine/hooks@7.17.4(react@19.2.4))(@types/react@19.2.14)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(@mantine/hooks@7.17.4(react@19.2.4))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       '@mantine/core': 7.17.4(@mantine/hooks@7.17.4(react@19.2.4))(@types/react@19.2.14)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
@@ -2691,7 +2691,7 @@ snapshots:
       '@redux-devtools/extension': 3.3.0(redux@5.0.1)
       clsx: 2.1.1
       javascript-stringify: 2.1.0
-      jotai: 2.20.0(@types/react@19.2.14)(react@19.2.4)
+      jotai: 2.20.1(@types/react@19.2.14)(react@19.2.4)
       jsondiffpatch: 0.5.0
       react: 19.2.4
       react-base16-styling: 0.9.1
@@ -2703,16 +2703,16 @@ snapshots:
       - react-dom
       - redux
 
-  jotai-family@1.0.2(jotai@2.20.0(@types/react@19.2.14)(react@19.2.4)):
+  jotai-family@1.0.2(jotai@2.20.1(@types/react@19.2.14)(react@19.2.4)):
     dependencies:
-      jotai: 2.20.0(@types/react@19.2.14)(react@19.2.4)
+      jotai: 2.20.1(@types/react@19.2.14)(react@19.2.4)
 
-  jotai-xstate@0.6.1(jotai@2.20.0(@types/react@19.2.14)(react@19.2.4))(xstate@5.32.0):
+  jotai-xstate@0.6.1(jotai@2.20.1(@types/react@19.2.14)(react@19.2.4))(xstate@5.32.1):
     dependencies:
-      jotai: 2.20.0(@types/react@19.2.14)(react@19.2.4)
-      xstate: 5.32.0
+      jotai: 2.20.1(@types/react@19.2.14)(react@19.2.4)
+      xstate: 5.32.1
 
-  jotai@2.20.0(@types/react@19.2.14)(react@19.2.4):
+  jotai@2.20.1(@types/react@19.2.14)(react@19.2.4):
     optionalDependencies:
       '@types/react': 19.2.14
       react: 19.2.4
@@ -3129,13 +3129,13 @@ snapshots:
 
   type-fest@4.41.0: {}
 
-  typescript-eslint@8.61.0(eslint@10.4.1)(typescript@6.0.3):
+  typescript-eslint@8.61.0(eslint@10.5.0)(typescript@6.0.3):
     dependencies:
-      '@typescript-eslint/eslint-plugin': 8.61.0(@typescript-eslint/parser@8.61.0(eslint@10.4.1)(typescript@6.0.3))(eslint@10.4.1)(typescript@6.0.3)
-      '@typescript-eslint/parser': 8.61.0(eslint@10.4.1)(typescript@6.0.3)
+      '@typescript-eslint/eslint-plugin': 8.61.0(@typescript-eslint/parser@8.61.0(eslint@10.5.0)(typescript@6.0.3))(eslint@10.5.0)(typescript@6.0.3)
+      '@typescript-eslint/parser': 8.61.0(eslint@10.5.0)(typescript@6.0.3)
       '@typescript-eslint/typescript-estree': 8.61.0(typescript@6.0.3)
-      '@typescript-eslint/utils': 8.61.0(eslint@10.4.1)(typescript@6.0.3)
-      eslint: 10.4.1
+      '@typescript-eslint/utils': 8.61.0(eslint@10.5.0)(typescript@6.0.3)
+      eslint: 10.5.0
       typescript: 6.0.3
     transitivePeerDependencies:
       - supports-color
@@ -3251,6 +3251,6 @@ snapshots:
 
   ws@8.20.0: {}
 
-  xstate@5.32.0: {}
+  xstate@5.32.1: {}
 
   yocto-queue@0.1.0: {}
