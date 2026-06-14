@@ -49,7 +49,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
-    "@statelyai/inspect": "^0.7.1",
+    "@statelyai/inspect": "^0.7.2",
     "@vitest/coverage-v8": "^4.1.8",
     "eslint": "^10.5.0",
     "globals": "^17.6.0",
