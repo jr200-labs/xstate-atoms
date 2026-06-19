@@ -1,6 +1,6 @@
 {
   "name": "@jr200-labs/xstate-atoms",
-  "version": "0.5.17",
+  "version": "0.5.18",
   "author": "jr200",
   "description": "Various XState Jotai Atoms...",
   "repository": {
@@ -27,7 +27,7 @@
     "prepublishOnly": "pnpm build && pnpm test"
   },
   "keywords": [],
-  "packageManager": "pnpm@11.8.0",
+  "packageManager": "pnpm@11.6.0",
   "peerDependencies": {
     "@duckdb/duckdb-wasm": ">=1.33.1-dev42.0 <2",
     "@nats-io/jetstream": "^3.4.0",
@@ -42,23 +42,23 @@
     "xstate": "^5.32.1"
   },
   "dependencies": {
-    "@jr200-labs/xstate-duckdb": "^1.2.2",
-    "@jr200-labs/xstate-nats": "^0.9.16",
+    "@jr200-labs/xstate-duckdb": "^1.2.1",
+    "@jr200-labs/xstate-nats": "^0.9.15",
     "@js-temporal/polyfill": "^0.5.1",
     "@types/js-yaml": "^4.0.9"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@statelyai/inspect": "^0.7.2",
-    "@vitest/coverage-v8": "^4.1.9",
+    "@vitest/coverage-v8": "^4.1.8",
     "eslint": "^10.5.0",
     "globals": "^17.6.0",
     "husky": "^9.1.7",
     "jotai-family": "^1.0.2",
     "prettier": "^3.8.4",
-    "syncpack": "^15.3.2",
+    "syncpack": "^15.3.1",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.61.1",
-    "vitest": "^4.1.9"
+    "typescript-eslint": "^8.61.0",
+    "vitest": "^4.1.8"
   }
 }
