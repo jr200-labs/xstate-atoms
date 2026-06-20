@@ -12,11 +12,11 @@ importers:
         specifier: '>=1.33.1-dev42.0 <2'
         version: 1.33.1-dev42.0
       '@jr200-labs/xstate-duckdb':
-        specifier: ^1.2.2
-        version: 1.2.2(@duckdb/duckdb-wasm@1.33.1-dev42.0)(@opentelemetry/api@1.9.1)(apache-arrow@21.1.0)(react@19.2.4)
+        specifier: ^1.3.0
+        version: 1.3.0(@duckdb/duckdb-wasm@1.33.1-dev42.0)(@opentelemetry/api@1.9.1)(apache-arrow@21.1.0)(react@19.2.4)
       '@jr200-labs/xstate-nats':
-        specifier: ^0.9.16
-        version: 0.9.16(@opentelemetry/api@1.9.1)
+        specifier: ^0.9.17
+        version: 0.9.17(@opentelemetry/api@1.9.1)
       '@js-temporal/polyfill':
         specifier: ^0.5.1
         version: 0.5.1
@@ -290,15 +290,15 @@ packages:
     resolution: {integrity: sha512-DmdYgtezMkh3cpU8/1uyXakv3tJRcmcXxBOcO0tbaozPwpmh4YMsnWrQm9ZmZMfa5ocbxzbFk6O4bDPEc/iAnA==}
     engines: {node: ^18.14.0 || ^20.0.0 || ^22.0.0 || >=24.0.0}
 
-  '@jr200-labs/xstate-duckdb@1.2.2':
-    resolution: {integrity: sha512-mYoLVD81LLoWgv9FxEH7n9XcRd2k+E5+JORxdehMz83i7DfTjhn7qpgE8M2/W46ysBLW0660xHAzQEh3vFjfMA==}
+  '@jr200-labs/xstate-duckdb@1.3.0':
+    resolution: {integrity: sha512-pFCLoQWZ5zA/OERSMemGolIM5kshmnIibMbU1NXk9SZP5M8CNrazcMCltHN7HaWC4SNiA0Jux0u7ssHzqJVK5A==}
     peerDependencies:
       '@duckdb/duckdb-wasm': '>=1.33.1-dev42.0 <2'
       '@opentelemetry/api': ^1.9.1
       apache-arrow: '>=21 <22'
 
-  '@jr200-labs/xstate-nats@0.9.16':
-    resolution: {integrity: sha512-gZxV0dU4k/ON0mtzoxhVctNDJVxzeY6ASQ7clnarLvKKcTAEFpX4F7AxP7+OF33/xumOY6GRj83dA+zDisinBQ==}
+  '@jr200-labs/xstate-nats@0.9.17':
+    resolution: {integrity: sha512-cksff5L6HMGYOMGdlFmTjzUNtoVTHqN1kwNvB61b1Anuq+bEu74RSh+/s7iRuWIIBKq5YntEBQjK1Y8MfLglHg==}
     peerDependencies:
       '@opentelemetry/api': ^1.9.1
 
@@ -1896,7 +1896,7 @@ snapshots:
     dependencies:
       '@sinclair/typebox': 0.34.40
 
-  '@jr200-labs/xstate-duckdb@1.2.2(@duckdb/duckdb-wasm@1.33.1-dev42.0)(@opentelemetry/api@1.9.1)(apache-arrow@21.1.0)(react@19.2.4)':
+  '@jr200-labs/xstate-duckdb@1.3.0(@duckdb/duckdb-wasm@1.33.1-dev42.0)(@opentelemetry/api@1.9.1)(apache-arrow@21.1.0)(react@19.2.4)':
     dependencies:
       '@duckdb/duckdb-wasm': 1.33.1-dev42.0
       '@opentelemetry/api': 1.9.1
@@ -1907,7 +1907,7 @@ snapshots:
     transitivePeerDependencies:
       - react
 
-  '@jr200-labs/xstate-nats@0.9.16(@opentelemetry/api@1.9.1)':
+  '@jr200-labs/xstate-nats@0.9.17(@opentelemetry/api@1.9.1)':
     dependencies:
       '@nats-io/jetstream': 3.4.0
       '@nats-io/kv': 3.4.0
