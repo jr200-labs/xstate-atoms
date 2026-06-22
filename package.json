@@ -23,7 +23,6 @@
     "test": "vitest run",
     "test:run": "vitest run",
     "test:watch": "vitest --watch",
-    "prepare": "husky",
     "prepublishOnly": "pnpm build && pnpm test"
   },
   "keywords": [],
@@ -53,7 +52,6 @@
     "@vitest/coverage-v8": "^4.1.9",
     "eslint": "^10.5.0",
     "globals": "^17.6.0",
-    "husky": "^9.1.7",
     "jotai-family": "^1.0.2",
     "prettier": "^3.8.4",
     "syncpack": "^15.3.2",
