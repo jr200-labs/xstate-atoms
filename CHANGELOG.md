@@ -1,5 +1,36 @@
 # Changelog
 
+## [0.5.20](https://github.com/jr200-labs/xstate-atoms/compare/v0.5.19...v0.5.20) (2026-07-06)
+
+
+### Features
+
+* **deps:** update github-actions ([#89](https://github.com/jr200-labs/xstate-atoms/issues/89)) ([95e6af3](https://github.com/jr200-labs/xstate-atoms/commit/95e6af330173d61a158296bf42c831b7339ae845))
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#101](https://github.com/jr200-labs/xstate-atoms/issues/101)) ([9135aff](https://github.com/jr200-labs/xstate-atoms/commit/9135aff3ea7484dee15a89ef3d236d19f02d92dc))
+* **deps:** update all non-major dependencies ([#109](https://github.com/jr200-labs/xstate-atoms/issues/109)) ([0944189](https://github.com/jr200-labs/xstate-atoms/commit/094418945b71fb581af9b41a3257c4f3e55ebe4f))
+* **deps:** update all non-major dependencies ([#94](https://github.com/jr200-labs/xstate-atoms/issues/94)) ([6450233](https://github.com/jr200-labs/xstate-atoms/commit/6450233adafbe33a4f68ff53eb1b950a7d052a7c))
+* **deps:** update all non-major dependencies ([#96](https://github.com/jr200-labs/xstate-atoms/issues/96)) ([f6e84a3](https://github.com/jr200-labs/xstate-atoms/commit/f6e84a363fbcf1abfbd9fb9fd8496d5d71a122bd))
+* **deps:** update all non-major dependencies ([#99](https://github.com/jr200-labs/xstate-atoms/issues/99)) ([a7ab2d7](https://github.com/jr200-labs/xstate-atoms/commit/a7ab2d7ead5dfdf8c1782dd14100a71abd0305df))
+* **deps:** update dependency jr200-labs/github-action-templates to shared-v0.1.19 ([#95](https://github.com/jr200-labs/xstate-atoms/issues/95)) ([2e9e4af](https://github.com/jr200-labs/xstate-atoms/commit/2e9e4afe0b59bfb4d1c813faca9b24646da285e8))
+* **deps:** update dependency jr200-labs/github-action-templates to shared-v0.1.20 ([#98](https://github.com/jr200-labs/xstate-atoms/issues/98)) ([52cffad](https://github.com/jr200-labs/xstate-atoms/commit/52cffadf0cf4ae79fb6f4695b23e85f1a8493391))
+* **deps:** update dependency jr200-labs/github-action-templates to shared-v0.1.21 ([#102](https://github.com/jr200-labs/xstate-atoms/issues/102)) ([f9521d0](https://github.com/jr200-labs/xstate-atoms/commit/f9521d0cadd006dbdfc122eb7a96ec16bf9ce373))
+* **deps:** update dependency jr200-labs/github-action-templates to shared-v0.1.23 ([#103](https://github.com/jr200-labs/xstate-atoms/issues/103)) ([5b29a54](https://github.com/jr200-labs/xstate-atoms/commit/5b29a54a595b783e77182bda68deaa34254c452b))
+* **deps:** update dependency jr200-labs/github-action-templates to shared-v0.1.27 ([#105](https://github.com/jr200-labs/xstate-atoms/issues/105)) ([51024a3](https://github.com/jr200-labs/xstate-atoms/commit/51024a3bd3f0bd7975371a2a4a70042e3d7a35e0))
+* **deps:** update dependency jr200-labs/github-action-templates to shared-v0.1.29 ([#108](https://github.com/jr200-labs/xstate-atoms/issues/108)) ([1542500](https://github.com/jr200-labs/xstate-atoms/commit/15425006f56ff1aad773919d971468e2cdbbf09c))
+* **deps:** update dependency prettier to ^3.8.5 ([#97](https://github.com/jr200-labs/xstate-atoms/issues/97)) ([7994a79](https://github.com/jr200-labs/xstate-atoms/commit/7994a79a43b534d016dc3a45747dbc82875b7301))
+* **deps:** update dependency prettier to ^3.9.1 ([#100](https://github.com/jr200-labs/xstate-atoms/issues/100)) ([6357c20](https://github.com/jr200-labs/xstate-atoms/commit/6357c20542efd23e9fec0f8ecb7da249efcca1f6))
+* **deps:** update dependency xstate to ^5.32.3 ([#104](https://github.com/jr200-labs/xstate-atoms/issues/104)) ([8c5b1cc](https://github.com/jr200-labs/xstate-atoms/commit/8c5b1cc185c58a2d186a635c1f6c1a7bbf0708c4))
+* **deps:** update dependency xstate to ^5.32.4 ([#106](https://github.com/jr200-labs/xstate-atoms/issues/106)) ([dff5347](https://github.com/jr200-labs/xstate-atoms/commit/dff5347e1d298e46d97e60e4e61ec5e4f80d7a0b))
+* **deps:** update pnpm to v11.10.0 ([#107](https://github.com/jr200-labs/xstate-atoms/issues/107)) ([3515d1f](https://github.com/jr200-labs/xstate-atoms/commit/3515d1ff745a422fc3cb19ba6bcc938a7cfbb17e))
+* **deps:** update shared workflow ref ([#88](https://github.com/jr200-labs/xstate-atoms/issues/88)) ([20e208b](https://github.com/jr200-labs/xstate-atoms/commit/20e208b6175171585115be78b72edf5cf893ed90))
+* **deps:** update shared workflow ref ([#91](https://github.com/jr200-labs/xstate-atoms/issues/91)) ([f33a27d](https://github.com/jr200-labs/xstate-atoms/commit/f33a27dc00ff861eff05b8e4e228db5acc04dfe5))
+* **deps:** update shared workflow ref ([#92](https://github.com/jr200-labs/xstate-atoms/issues/92)) ([0768cae](https://github.com/jr200-labs/xstate-atoms/commit/0768caeac1bc1911a977813cb4491c29cd556a13))
+* **deps:** update shared workflow ref ([#93](https://github.com/jr200-labs/xstate-atoms/issues/93)) ([f1f3635](https://github.com/jr200-labs/xstate-atoms/commit/f1f3635228f1dfa2b2b6dda84442db8accb85ea0))
+
 ## [0.5.19](https://github.com/jr200-labs/xstate-atoms/compare/v0.5.18...v0.5.19) (2026-06-20)
 
 
