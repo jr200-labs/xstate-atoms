@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.5.21](https://github.com/jr200-labs/xstate-atoms/compare/v0.5.20...v0.5.21) (2026-07-12)
+
+
+### Features
+
+* **deps:** update dependency typescript to v7 ([#111](https://github.com/jr200-labs/xstate-atoms/issues/111)) ([a467216](https://github.com/jr200-labs/xstate-atoms/commit/a467216cc9627b8debfd6a68f9f2f0e19074a1e2))
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#110](https://github.com/jr200-labs/xstate-atoms/issues/110)) ([ddff1be](https://github.com/jr200-labs/xstate-atoms/commit/ddff1be2c02ad14a2c7ce836d92229e92852c8c2))
+* **deps:** update all non-major dependencies ([#113](https://github.com/jr200-labs/xstate-atoms/issues/113)) ([c0c3fe7](https://github.com/jr200-labs/xstate-atoms/commit/c0c3fe79b0a9978656a9be3be5383e6b445d08e7))
+
 ## [0.5.20](https://github.com/jr200-labs/xstate-atoms/compare/v0.5.19...v0.5.20) (2026-07-06)
 
 
