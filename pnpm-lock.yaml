@@ -15,8 +15,8 @@ importers:
         specifier: ^1.5.0
         version: 1.5.0(@duckdb/duckdb-wasm@1.33.1-dev42.0)(@opentelemetry/api@1.9.1)(apache-arrow@21.1.0)(react@19.2.4)
       '@jr200-labs/xstate-nats':
-        specifier: ^0.9.19
-        version: 0.9.19(@opentelemetry/api@1.9.1)
+        specifier: ^0.9.21
+        version: 0.9.21(@opentelemetry/api@1.9.1)
       '@js-temporal/polyfill':
         specifier: ^0.5.1
         version: 0.5.1
@@ -294,8 +294,8 @@ packages:
       '@opentelemetry/api': ^1.9.1
       apache-arrow: '>=21 <22'
 
-  '@jr200-labs/xstate-nats@0.9.19':
-    resolution: {integrity: sha512-TonHlmnI3pNzK4lAjEXUWM7iLGALLeL8UXFo09A9cq5BOdG9CYvXdc3uXxtO5t8/GVAf+wF1x+Siabj3jMl7kA==}
+  '@jr200-labs/xstate-nats@0.9.21':
+    resolution: {integrity: sha512-fS3hGYjTiRtJXwwWcUA+QmVFT+etrWT9HKp4XqMwlFGOIjIjvqKs7Tg/3CiqEDSRNKzsKtscqE5LH3YgHK2Ehg==}
     peerDependencies:
       '@opentelemetry/api': ^1.9.1
 
@@ -2024,7 +2024,7 @@ snapshots:
     transitivePeerDependencies:
       - react
 
-  '@jr200-labs/xstate-nats@0.9.19(@opentelemetry/api@1.9.1)':
+  '@jr200-labs/xstate-nats@0.9.21(@opentelemetry/api@1.9.1)':
     dependencies:
       '@nats-io/jetstream': 3.4.0
       '@nats-io/kv': 3.4.0

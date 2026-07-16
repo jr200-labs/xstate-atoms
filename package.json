@@ -26,7 +26,7 @@
     "prepublishOnly": "pnpm build && pnpm test"
   },
   "keywords": [],
-  "packageManager": "pnpm@11.13.0",
+  "packageManager": "pnpm@11.13.1",
   "peerDependencies": {
     "@duckdb/duckdb-wasm": ">=1.33.1-dev42.0 <2",
     "@nats-io/jetstream": "^3.4.0",
@@ -42,7 +42,7 @@
   },
   "dependencies": {
     "@jr200-labs/xstate-duckdb": "^1.5.0",
-    "@jr200-labs/xstate-nats": "^0.9.19",
+    "@jr200-labs/xstate-nats": "^0.9.21",
     "@js-temporal/polyfill": "^0.5.1",
     "@types/js-yaml": "^4.0.9"
   },
