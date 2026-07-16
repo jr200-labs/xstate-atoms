@@ -12,8 +12,8 @@ importers:
         specifier: '>=1.33.1-dev42.0 <2'
         version: 1.33.1-dev42.0
       '@jr200-labs/xstate-duckdb':
-        specifier: ^1.5.0
-        version: 1.5.0(@duckdb/duckdb-wasm@1.33.1-dev42.0)(@opentelemetry/api@1.9.1)(apache-arrow@21.1.0)(react@19.2.4)
+        specifier: ^1.5.3
+        version: 1.5.3(@duckdb/duckdb-wasm@1.33.1-dev42.0)(@opentelemetry/api@1.9.1)(apache-arrow@21.1.0)(react@19.2.4)
       '@jr200-labs/xstate-nats':
         specifier: ^0.9.21
         version: 0.9.21(@opentelemetry/api@1.9.1)
@@ -287,8 +287,8 @@ packages:
     resolution: {integrity: sha512-DmdYgtezMkh3cpU8/1uyXakv3tJRcmcXxBOcO0tbaozPwpmh4YMsnWrQm9ZmZMfa5ocbxzbFk6O4bDPEc/iAnA==}
     engines: {node: ^18.14.0 || ^20.0.0 || ^22.0.0 || >=24.0.0}
 
-  '@jr200-labs/xstate-duckdb@1.5.0':
-    resolution: {integrity: sha512-0ZqhwCXNdNHTDG1rbDruDQqRxmRWnre4QBoTEgas27M+jrhscs4w+9tXaXnuCH6a8xewKvTQ7UBk3SNBpBpOhg==}
+  '@jr200-labs/xstate-duckdb@1.5.3':
+    resolution: {integrity: sha512-NwY32K0QLTfAxCtN5jqBparkHfHb4nX29ntE79a9Bn2sdJ5i39ceDQFKuOQZrfNSnNTaXGUgUeKqFPL2OJPANA==}
     peerDependencies:
       '@duckdb/duckdb-wasm': '>=1.33.1-dev42.0 <2'
       '@opentelemetry/api': ^1.9.1
@@ -2013,7 +2013,7 @@ snapshots:
     dependencies:
       '@sinclair/typebox': 0.34.40
 
-  '@jr200-labs/xstate-duckdb@1.5.0(@duckdb/duckdb-wasm@1.33.1-dev42.0)(@opentelemetry/api@1.9.1)(apache-arrow@21.1.0)(react@19.2.4)':
+  '@jr200-labs/xstate-duckdb@1.5.3(@duckdb/duckdb-wasm@1.33.1-dev42.0)(@opentelemetry/api@1.9.1)(apache-arrow@21.1.0)(react@19.2.4)':
     dependencies:
       '@duckdb/duckdb-wasm': 1.33.1-dev42.0
       '@opentelemetry/api': 1.9.1
