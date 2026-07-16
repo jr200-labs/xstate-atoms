@@ -42,7 +42,7 @@
   },
   "dependencies": {
     "@jr200-labs/xstate-duckdb": "^1.5.3",
-    "@jr200-labs/xstate-nats": "^0.9.21",
+    "@jr200-labs/xstate-nats": "^0.9.22",
     "@js-temporal/polyfill": "^0.5.1",
     "@types/js-yaml": "^4.0.9"
   },
