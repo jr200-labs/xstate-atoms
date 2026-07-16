@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.24](https://github.com/jr200-labs/xstate-atoms/compare/v0.5.23...v0.5.24) (2026-07-16)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @jr200-labs/xstate-nats to ^0.9.22 ([#120](https://github.com/jr200-labs/xstate-atoms/issues/120)) ([18fc0e0](https://github.com/jr200-labs/xstate-atoms/commit/18fc0e0e4d40d05223fcde5305d524621b1b5437))
+
 ## [0.5.23](https://github.com/jr200-labs/xstate-atoms/compare/v0.5.22...v0.5.23) (2026-07-16)
 
 
