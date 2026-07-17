@@ -12,8 +12,8 @@ importers:
         specifier: '>=1.33.1-dev42.0 <2'
         version: 1.33.1-dev42.0
       '@jr200-labs/xstate-duckdb':
-        specifier: ^1.6.0
-        version: 1.6.0(@duckdb/duckdb-wasm@1.33.1-dev42.0)(@opentelemetry/api@1.9.1)(apache-arrow@21.1.0)(react@19.2.4)
+        specifier: ^1.7.0
+        version: 1.7.0(@duckdb/duckdb-wasm@1.33.1-dev42.0)(@opentelemetry/api-logs@0.220.0)(@opentelemetry/api@1.9.1)(apache-arrow@21.1.0)(react@19.2.4)
       '@jr200-labs/xstate-nats':
         specifier: ^0.9.22
         version: 0.9.22(@opentelemetry/api@1.9.1)
@@ -287,11 +287,12 @@ packages:
     resolution: {integrity: sha512-DmdYgtezMkh3cpU8/1uyXakv3tJRcmcXxBOcO0tbaozPwpmh4YMsnWrQm9ZmZMfa5ocbxzbFk6O4bDPEc/iAnA==}
     engines: {node: ^18.14.0 || ^20.0.0 || ^22.0.0 || >=24.0.0}
 
-  '@jr200-labs/xstate-duckdb@1.6.0':
-    resolution: {integrity: sha512-uUWena5iWs83RwXwIN936BLDEXmbChZV4nujhT55qHw9l7hOAi1F4wXyjojhSmsKAFVL5nXbvxxOvpQFz62A+Q==}
+  '@jr200-labs/xstate-duckdb@1.7.0':
+    resolution: {integrity: sha512-w0TA2VNbrRc92VzshXL/Dkls9ZT9zLSZ7J+ZiF6tjAb5qiVSfHz07HcMuBXXkLu9N3Ibn2DwtY5GE4/MrGW1Ew==}
     peerDependencies:
       '@duckdb/duckdb-wasm': '>=1.33.1-dev42.0 <2'
       '@opentelemetry/api': ^1.9.1
+      '@opentelemetry/api-logs': ^0.220.0
       apache-arrow: '>=21 <22'
 
   '@jr200-labs/xstate-nats@0.9.22':
@@ -358,6 +359,10 @@ packages:
 
   '@nats-io/obj@3.4.0':
     resolution: {integrity: sha512-zQRyrbxVtapKtqlxcA7qiMBN5aoo1aqSLNHyTZY9d6xBmBAYsw7sfYfSdHSguiR7GXtEjFgFnynTcv7Rw9MIrg==}
+
+  '@opentelemetry/api-logs@0.220.0':
+    resolution: {integrity: sha512-CmVa4ImJ+ynfrPMNaAXHET6Bhb44SwzmfyVJFq9ni2jgXJR/l7C6gfVFddNmHP+ZOkP9cf4f9DBe68qVLTHc9w==}
+    engines: {node: '>=8.0.0'}
 
   '@opentelemetry/api@1.9.1':
     resolution: {integrity: sha512-gLyJlPHPZYdAk1JENA9LeHejZe1Ti77/pTeFm/nMXmQH/HFZlcS/O2XJB+L8fkbrNSqhdtlvjBVjxwUYanNH5Q==}
@@ -2013,10 +2018,11 @@ snapshots:
     dependencies:
       '@sinclair/typebox': 0.34.40
 
-  '@jr200-labs/xstate-duckdb@1.6.0(@duckdb/duckdb-wasm@1.33.1-dev42.0)(@opentelemetry/api@1.9.1)(apache-arrow@21.1.0)(react@19.2.4)':
+  '@jr200-labs/xstate-duckdb@1.7.0(@duckdb/duckdb-wasm@1.33.1-dev42.0)(@opentelemetry/api-logs@0.220.0)(@opentelemetry/api@1.9.1)(apache-arrow@21.1.0)(react@19.2.4)':
     dependencies:
       '@duckdb/duckdb-wasm': 1.33.1-dev42.0
       '@opentelemetry/api': 1.9.1
+      '@opentelemetry/api-logs': 0.220.0
       apache-arrow: 21.1.0
       duckdb-wasm-kit: 0.1.39(@duckdb/duckdb-wasm@1.33.1-dev42.0)(apache-arrow@21.1.0)(react@19.2.4)
       pako: 3.0.1
@@ -2105,6 +2111,10 @@ snapshots:
       '@nats-io/jetstream': 3.4.0
       '@nats-io/nats-core': 3.4.0
       js-sha256: 0.11.1
+
+  '@opentelemetry/api-logs@0.220.0':
+    dependencies:
+      '@opentelemetry/api': 1.9.1
 
   '@opentelemetry/api@1.9.1': {}
 
