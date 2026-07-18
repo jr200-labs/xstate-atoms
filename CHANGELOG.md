@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.28](https://github.com/jr200-labs/xstate-atoms/compare/v0.5.27...v0.5.28) (2026-07-18)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @jr200-labs/xstate-duckdb to ^1.8.0 ([#128](https://github.com/jr200-labs/xstate-atoms/issues/128)) ([588c108](https://github.com/jr200-labs/xstate-atoms/commit/588c1080436cacdc00fe25d1c26bf36c0058dcf3))
+
 ## [0.5.27](https://github.com/jr200-labs/xstate-atoms/compare/v0.5.26...v0.5.27) (2026-07-18)
 
 
