@@ -12,7 +12,7 @@ importers:
         specifier: '>=1.33.1-dev42.0 <2'
         version: 1.33.1-dev42.0
       '@jr200-labs/xstate-duckdb':
-        specifier: ^1.8.0
+        specifier: '>=1.8.0 <2'
         version: 1.8.0(@duckdb/duckdb-wasm@1.33.1-dev42.0)(@opentelemetry/api-logs@0.220.0)(@opentelemetry/api@1.9.1)(apache-arrow@21.1.0)(react@19.2.4)
       '@jr200-labs/xstate-nats':
         specifier: '>=0.9.22 <1'
