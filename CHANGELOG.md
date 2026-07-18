@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.29](https://github.com/jr200-labs/xstate-atoms/compare/v0.5.28...v0.5.29) (2026-07-18)
+
+
+### Bug Fixes
+
+* accept compatible xstate dependency releases ([#130](https://github.com/jr200-labs/xstate-atoms/issues/130)) ([96ea707](https://github.com/jr200-labs/xstate-atoms/commit/96ea707fa133e1c498227f9b6361687a12659c2d))
+
 ## [0.5.28](https://github.com/jr200-labs/xstate-atoms/compare/v0.5.27...v0.5.28) (2026-07-18)
 
 
