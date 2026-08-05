@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.5.31](https://github.com/jr200-labs/xstate-atoms/compare/v0.5.30...v0.5.31) (2026-08-04)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#138](https://github.com/jr200-labs/xstate-atoms/issues/138)) ([c6e41e7](https://github.com/jr200-labs/xstate-atoms/commit/c6e41e7e9427963d4b93c9a3a4e4a6063a590a47))
+* **deps:** update all non-major dependencies ([#143](https://github.com/jr200-labs/xstate-atoms/issues/143)) ([47eab38](https://github.com/jr200-labs/xstate-atoms/commit/47eab3896fef6abaa26fb39c30ee6f9c7d6ba9f1))
+* **deps:** update dependency jr200-labs/github-action-templates to shared-v0.1.33 ([#140](https://github.com/jr200-labs/xstate-atoms/issues/140)) ([f642596](https://github.com/jr200-labs/xstate-atoms/commit/f642596c5c6551b8833b41989aa670edbc9ca5e4))
+* **deps:** update dependency jr200-labs/github-action-templates to shared-v0.1.35 ([#141](https://github.com/jr200-labs/xstate-atoms/issues/141)) ([45d2ca3](https://github.com/jr200-labs/xstate-atoms/commit/45d2ca37e0b0e89dee2c3c3e9bb5bb1f907bec91))
+* **deps:** update pnpm to v11.16.0 ([#142](https://github.com/jr200-labs/xstate-atoms/issues/142)) ([58fa294](https://github.com/jr200-labs/xstate-atoms/commit/58fa29487dab9d6b09d6329ea6e3b65a402725a6))
+
 ## [0.5.30](https://github.com/jr200-labs/xstate-atoms/compare/v0.5.29...v0.5.30) (2026-07-20)
 
 
