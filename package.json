@@ -50,7 +50,7 @@
     "@eslint/js": "^10.0.1",
     "@statelyai/inspect": "^0.7.2",
     "@vitest/coverage-v8": "^4.1.10",
-    "eslint": "^10.8.0",
+    "eslint": "^10.8.1",
     "globals": "^17.9.0",
     "jotai-family": "^1.1.0",
     "prettier": "^3.9.6",
