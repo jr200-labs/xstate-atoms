@@ -26,7 +26,7 @@
     "prepublishOnly": "pnpm build && pnpm test"
   },
   "keywords": [],
-  "packageManager": "pnpm@11.20.0",
+  "packageManager": "pnpm@11.21.0",
   "peerDependencies": {
     "@duckdb/duckdb-wasm": ">=1.33.1-dev42.0 <2",
     "@nats-io/jetstream": "^3.4.0",
@@ -51,12 +51,12 @@
     "@statelyai/inspect": "^0.7.2",
     "@vitest/coverage-v8": "^4.1.10",
     "eslint": "^10.8.1",
-    "globals": "^17.9.0",
+    "globals": "^17.11.0",
     "jotai-family": "^1.1.0",
     "prettier": "^3.9.6",
-    "syncpack": "^15.3.2",
+    "syncpack": "^15.3.3",
     "typescript": "^7.0.2",
-    "typescript-eslint": "^8.66.0",
+    "typescript-eslint": "^8.67.0",
     "vitest": "^4.1.10"
   }
 }
