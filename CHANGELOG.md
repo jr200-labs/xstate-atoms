@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.5.32](https://github.com/jr200-labs/xstate-atoms/compare/v0.5.31...v0.5.32) (2026-09-06)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#147](https://github.com/jr200-labs/xstate-atoms/issues/147)) ([f50f152](https://github.com/jr200-labs/xstate-atoms/commit/f50f152ce83e1614fa11998dadf46cba621d42d9))
+* **deps:** update all non-major dependencies ([#152](https://github.com/jr200-labs/xstate-atoms/issues/152)) ([f6da2fc](https://github.com/jr200-labs/xstate-atoms/commit/f6da2fc3f0a5b7b4613739d9d4dbe735d97ec95b))
+* **deps:** update all non-major dependencies to ^4.1.11 ([#151](https://github.com/jr200-labs/xstate-atoms/issues/151)) ([7246aba](https://github.com/jr200-labs/xstate-atoms/commit/7246abaee72ea1465b917018bd7159053cb5a5a7))
+* **deps:** update dependency eslint to ^10.8.1 ([#144](https://github.com/jr200-labs/xstate-atoms/issues/144)) ([2f58f8b](https://github.com/jr200-labs/xstate-atoms/commit/2f58f8b077c38edbc6cbb40ce84916954c0591f5))
+* **deps:** update dependency jr200-labs/github-action-templates to shared-v0.1.36 ([#145](https://github.com/jr200-labs/xstate-atoms/issues/145)) ([e1c91da](https://github.com/jr200-labs/xstate-atoms/commit/e1c91da7562b91d2f650fcce9eaac145668710b8))
+* **deps:** update dependency jr200-labs/github-action-templates to shared-v0.1.37 ([#148](https://github.com/jr200-labs/xstate-atoms/issues/148)) ([1190ec1](https://github.com/jr200-labs/xstate-atoms/commit/1190ec102d05cd1a43d7db7d60002d27fd3be500))
+* **deps:** update dependency jr200-labs/github-action-templates to shared-v0.1.38 ([#150](https://github.com/jr200-labs/xstate-atoms/issues/150)) ([dd76f3b](https://github.com/jr200-labs/xstate-atoms/commit/dd76f3b936652a71474e98f3e040fa888049636b))
+* **deps:** update dependency jr200-labs/github-action-templates to shared-v0.1.46 ([#153](https://github.com/jr200-labs/xstate-atoms/issues/153)) ([b295c83](https://github.com/jr200-labs/xstate-atoms/commit/b295c834724a8153c4043709f13222874fc5df68))
+* **deps:** update pnpm to v11.22.0 ([#149](https://github.com/jr200-labs/xstate-atoms/issues/149)) ([7b0a825](https://github.com/jr200-labs/xstate-atoms/commit/7b0a8259203eb8595459747cbd249aa7d1fe989b))
+
 ## [0.5.31](https://github.com/jr200-labs/xstate-atoms/compare/v0.5.30...v0.5.31) (2026-08-04)
 
 
