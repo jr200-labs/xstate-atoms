@@ -42,11 +42,11 @@ importers:
         specifier: '>=21 <22'
         version: 21.1.0
       jotai:
-        specifier: ^2.20.3
-        version: 2.20.3(@types/react@19.2.14)(react@19.2.4)
+        specifier: ^3.0.1
+        version: 3.0.1(@types/react@19.2.14)(react@19.2.4)
       jotai-xstate:
         specifier: ^0.6.1
-        version: 0.6.1(jotai@2.20.3(@types/react@19.2.14)(react@19.2.4))(xstate@5.33.2)
+        version: 0.6.1(jotai@3.0.1(@types/react@19.2.14)(react@19.2.4))(xstate@5.33.2)
       xstate:
         specifier: ^5.33.2
         version: 5.33.2
@@ -68,7 +68,7 @@ importers:
         version: 17.13.0
       jotai-family:
         specifier: ^1.1.0
-        version: 1.1.0(jotai@2.20.3(@types/react@19.2.14)(react@19.2.4))
+        version: 1.1.0(jotai@3.0.1(@types/react@19.2.14)(react@19.2.4))
       prettier:
         specifier: ^3.9.9
         version: 3.9.9
@@ -1252,6 +1252,18 @@ packages:
         optional: true
       '@babel/template':
         optional: true
+      '@types/react':
+        optional: true
+      react:
+        optional: true
+
+  jotai@3.0.1:
+    resolution: {integrity: sha512-6tS7wY9otdiNp26Wqb/1ds3OuVJVoV+tJlN4hpLrYmfFf/t9bauVt+zKBNSpS5qSl5h6GieVQ+OknVraZX+udQ==}
+    engines: {node: '>=22.12.0'}
+    peerDependencies:
+      '@types/react': '>=18.0.0'
+      react: '>=18.0.0'
+    peerDependenciesMeta:
       '@types/react':
         optional: true
       react:
@@ -2948,16 +2960,26 @@ snapshots:
       - react-dom
       - redux
 
-  jotai-family@1.1.0(jotai@2.20.3(@types/react@19.2.14)(react@19.2.4)):
+  jotai-family@1.1.0(jotai@3.0.1(@types/react@19.2.14)(react@19.2.4)):
     dependencies:
-      jotai: 2.20.3(@types/react@19.2.14)(react@19.2.4)
+      jotai: 3.0.1(@types/react@19.2.14)(react@19.2.4)
 
   jotai-xstate@0.6.1(jotai@2.20.3(@types/react@19.2.14)(react@19.2.4))(xstate@5.33.2):
     dependencies:
       jotai: 2.20.3(@types/react@19.2.14)(react@19.2.4)
       xstate: 5.33.2
 
+  jotai-xstate@0.6.1(jotai@3.0.1(@types/react@19.2.14)(react@19.2.4))(xstate@5.33.2):
+    dependencies:
+      jotai: 3.0.1(@types/react@19.2.14)(react@19.2.4)
+      xstate: 5.33.2
+
   jotai@2.20.3(@types/react@19.2.14)(react@19.2.4):
+    optionalDependencies:
+      '@types/react': 19.2.14
+      react: 19.2.4
+
+  jotai@3.0.1(@types/react@19.2.14)(react@19.2.4):
     optionalDependencies:
       '@types/react': 19.2.14
       react: 19.2.4
