@@ -1,6 +1,6 @@
 packages:
   - "."
   - "examples/*"
-
 ignoredBuiltDependencies:
   - esbuild
+minimumReleaseAge: 0
