@@ -170,8 +170,8 @@ importers:
         specifier: '>=1.33.1-dev42.0 <2'
         version: 1.33.1-dev42.0
       '@jr200-labs/xstate-duckdb':
-        specifier: ^1.10.0
-        version: 1.10.0(@duckdb/duckdb-wasm@1.33.1-dev42.0)(@opentelemetry/api-logs@0.222.0)(@opentelemetry/api@1.9.1)(apache-arrow@21.1.0)
+        specifier: ^2.0.3
+        version: 2.0.3(@duckdb/duckdb-wasm@1.33.1-dev42.0)(@opentelemetry/api-logs@0.223.0)(@opentelemetry/api@1.9.1)(apache-arrow@21.1.0)
       '@jr200-labs/xstate-nats':
         specifier: ^0.9.25
         version: 0.9.25(@opentelemetry/api@1.9.1)
@@ -204,17 +204,17 @@ importers:
         version: 3.0.1(@types/react@19.2.14)(react@19.2.4)
       jotai-xstate:
         specifier: ^0.6.1
-        version: 0.6.1(jotai@3.0.1(@types/react@19.2.14)(react@19.2.4))(xstate@5.33.2)
+        version: 0.6.1(jotai@3.0.1(@types/react@19.2.14)(react@19.2.4))(xstate@5.33.3)
       xstate:
         specifier: ^5.33.2
-        version: 5.33.2
+        version: 5.33.3
     devDependencies:
       '@eslint/js':
         specifier: ^10.0.1
         version: 10.0.1(eslint@10.12.0(supports-color@7.2.0))
       '@statelyai/inspect':
         specifier: ^0.7.2
-        version: 0.7.2(xstate@5.33.2)
+        version: 0.7.2(xstate@5.33.3)
       '@vitest/coverage-v8':
         specifier: ^5.0.3
         version: 5.0.3(vitest@5.0.3)
@@ -280,7 +280,7 @@ importers:
         version: 0.13.1(@types/react@19.2.14)(jotai@2.20.3(@types/react@19.2.14)(react@19.2.4))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(redux@5.0.1)
       jotai-xstate:
         specifier: ^0.6.1
-        version: 0.6.1(jotai@2.20.3(@types/react@19.2.14)(react@19.2.4))(xstate@5.33.2)
+        version: 0.6.1(jotai@2.20.3(@types/react@19.2.14)(react@19.2.4))(xstate@5.33.3)
       js-yaml:
         specifier: ^4.1.1
         version: 4.1.1
@@ -295,7 +295,7 @@ importers:
         version: 19.2.4(react@19.2.4)
       xstate:
         specifier: ^5.30.0
-        version: 5.33.2
+        version: 5.33.3
     devDependencies:
       '@types/react':
         specifier: ^19.2.14
@@ -451,12 +451,12 @@ packages:
     resolution: {integrity: sha512-DmdYgtezMkh3cpU8/1uyXakv3tJRcmcXxBOcO0tbaozPwpmh4YMsnWrQm9ZmZMfa5ocbxzbFk6O4bDPEc/iAnA==}
     engines: {node: ^18.14.0 || ^20.0.0 || ^22.0.0 || >=24.0.0}
 
-  '@jr200-labs/xstate-duckdb@1.10.0':
-    resolution: {integrity: sha512-yeYxRNJZpe0S2Z0zwGgHosN7c4C4Xmejn84FB7qgoant8yioRt9Cf30gG3t+pqidZsdiLSIEzJFCd0peZWA7Jg==}
+  '@jr200-labs/xstate-duckdb@2.0.3':
+    resolution: {integrity: sha512-+gE4CwBpDnBtGuiUkAx38yqAdiAN9nbsOJam6TrA9fCMJm7sYxLG2ySmo4sN0JsiO+OcFNNnMldLijjHlh9Clg==}
     peerDependencies:
       '@duckdb/duckdb-wasm': '>=1.33.1-dev42.0 <2'
-      '@opentelemetry/api': ^1.9.1
-      '@opentelemetry/api-logs': ^0.222.0
+      '@opentelemetry/api': ^1.10.0
+      '@opentelemetry/api-logs': ^0.223.0
       apache-arrow: '>=21 <22'
 
   '@jr200-labs/xstate-nats@0.9.25':
@@ -533,8 +533,8 @@ packages:
   '@nats-io/obj@3.4.0':
     resolution: {integrity: sha512-zQRyrbxVtapKtqlxcA7qiMBN5aoo1aqSLNHyTZY9d6xBmBAYsw7sfYfSdHSguiR7GXtEjFgFnynTcv7Rw9MIrg==}
 
-  '@opentelemetry/api-logs@0.222.0':
-    resolution: {integrity: sha512-9mb1If+IF6u0ZVXkHQ6ogEae5HwA6ajIVUgpSDQyRASxft6BSXHvBvPooRle3yFN/fKnCdSOnuu0OC3PLcF6+g==}
+  '@opentelemetry/api-logs@0.223.0':
+    resolution: {integrity: sha512-Oepm6etVPFCn0VWB1t833iOTgz1eYBDUPxcrOR/XvwzD1+Ag9VzSPSrrKAFNJ/haatj+8CXbG47pZXvdNQKDJw==}
     engines: {node: '>=8.0.0'}
 
   '@opentelemetry/api@1.9.1':
@@ -1566,8 +1566,8 @@ packages:
     resolution: {integrity: sha512-LaNjtRWUBY++zB5nE/NwcaoMylSPk+S+ZHNB1TzdbMJMny6dynpAGt7X/tl/QYq3TIeE6nxHppbo2LGymrG5Pw==}
     engines: {node: '>=10'}
 
-  pako@3.0.2:
-    resolution: {integrity: sha512-uBv6IT2aT1A78iU6dpNEbf6+CyhlV/6g9JlJs9kpgjFGFhruIICVRysF/W0SLzXg5+hCl+KroH7e4YUyfEmgLg==}
+  pako@3.0.3:
+    resolution: {integrity: sha512-tmrebBBYI5FOw8QICGwJNqE8fotC8R+gwcxOvoFNv+GKehOI6Lc6YBolNcQNnC4v96l1wt7rh102ifD4kVeZAQ==}
 
   partysocket@0.0.25:
     resolution: {integrity: sha512-1oCGA65fydX/FgdnsiBh68buOvfxuteoZVSb3Paci2kRp/7lhF0HyA8EDb5X/O6FxId1e+usPTQNRuzFEvkJbQ==}
@@ -2053,8 +2053,8 @@ packages:
       utf-8-validate:
         optional: true
 
-  xstate@5.33.2:
-    resolution: {integrity: sha512-8tC7yXgeCvpT8gKEeEje6ikJJG1wpnoLiXe+HfECW8m10ubMd3QxKOwWA8KxPJVBcLwfdRoMKYxIBGYKmo37/A==}
+  xstate@5.33.3:
+    resolution: {integrity: sha512-AnDRjS/GyKHmbA1PyhVCYBqYsA7EGe3KGgeD0ht3NFsXzoz7leX/HQDFX9QlHFJ/ltLHPsgChJYwPzRvB/0b4g==}
 
   yocto-queue@0.1.0:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
@@ -2188,14 +2188,14 @@ snapshots:
     dependencies:
       '@sinclair/typebox': 0.34.40
 
-  '@jr200-labs/xstate-duckdb@1.10.0(@duckdb/duckdb-wasm@1.33.1-dev42.0)(@opentelemetry/api-logs@0.222.0)(@opentelemetry/api@1.9.1)(apache-arrow@21.1.0)':
+  '@jr200-labs/xstate-duckdb@2.0.3(@duckdb/duckdb-wasm@1.33.1-dev42.0)(@opentelemetry/api-logs@0.223.0)(@opentelemetry/api@1.9.1)(apache-arrow@21.1.0)':
     dependencies:
       '@duckdb/duckdb-wasm': 1.33.1-dev42.0
       '@opentelemetry/api': 1.9.1
-      '@opentelemetry/api-logs': 0.222.0
+      '@opentelemetry/api-logs': 0.223.0
       apache-arrow: 21.1.0
-      pako: 3.0.2
-      xstate: 5.33.2
+      pako: 3.0.3
+      xstate: 5.33.3
 
   '@jr200-labs/xstate-nats@0.9.25(@opentelemetry/api@1.9.1)':
     dependencies:
@@ -2204,7 +2204,7 @@ snapshots:
       '@nats-io/nats-core': 3.4.0
       '@nats-io/obj': 3.4.0
       '@opentelemetry/api': 1.9.1
-      xstate: 5.33.2
+      xstate: 5.33.3
 
   '@jridgewell/resolve-uri@3.1.2': {}
 
@@ -2287,7 +2287,7 @@ snapshots:
       '@nats-io/nats-core': 3.4.0
       js-sha256: 0.11.1
 
-  '@opentelemetry/api-logs@0.222.0':
+  '@opentelemetry/api-logs@0.223.0':
     dependencies:
       '@opentelemetry/api': 1.9.1
 
@@ -2356,7 +2356,7 @@ snapshots:
 
   '@sinclair/typebox@0.34.40': {}
 
-  '@statelyai/inspect@0.7.2(xstate@5.33.2)':
+  '@statelyai/inspect@0.7.2(xstate@5.33.3)':
     dependencies:
       fast-safe-stringify: 2.1.1
       isomorphic-ws: 5.0.0(ws@8.20.0)
@@ -2364,7 +2364,7 @@ snapshots:
       safe-stable-stringify: 2.5.0
       superjson: 1.13.3
       ws: 8.20.0
-      xstate: 5.33.2
+      xstate: 5.33.3
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
@@ -3035,15 +3035,15 @@ snapshots:
     dependencies:
       jotai: 3.0.1(@types/react@19.2.14)(react@19.2.4)
 
-  jotai-xstate@0.6.1(jotai@2.20.3(@types/react@19.2.14)(react@19.2.4))(xstate@5.33.2):
+  jotai-xstate@0.6.1(jotai@2.20.3(@types/react@19.2.14)(react@19.2.4))(xstate@5.33.3):
     dependencies:
       jotai: 2.20.3(@types/react@19.2.14)(react@19.2.4)
-      xstate: 5.33.2
+      xstate: 5.33.3
 
-  jotai-xstate@0.6.1(jotai@3.0.1(@types/react@19.2.14)(react@19.2.4))(xstate@5.33.2):
+  jotai-xstate@0.6.1(jotai@3.0.1(@types/react@19.2.14)(react@19.2.4))(xstate@5.33.3):
     dependencies:
       jotai: 3.0.1(@types/react@19.2.14)(react@19.2.4)
-      xstate: 5.33.2
+      xstate: 5.33.3
 
   jotai@2.20.3(@types/react@19.2.14)(react@19.2.4):
     optionalDependencies:
@@ -3187,7 +3187,7 @@ snapshots:
     dependencies:
       p-limit: 3.1.0
 
-  pako@3.0.2: {}
+  pako@3.0.3: {}
 
   partysocket@0.0.25:
     dependencies:
@@ -3593,6 +3593,6 @@ snapshots:
 
   ws@8.20.0: {}
 
-  xstate@5.33.2: {}
+  xstate@5.33.3: {}
 
   yocto-queue@0.1.0: {}
