@@ -26,7 +26,7 @@
     "prepublishOnly": "pnpm build && pnpm test"
   },
   "keywords": [],
-  "packageManager": "pnpm@12.9.1",
+  "packageManager": "pnpm@12.18.0",
   "peerDependencies": {
     "@duckdb/duckdb-wasm": ">=1.33.1-dev42.0 <2",
     "@nats-io/jetstream": "^3.4.0",
@@ -35,28 +35,28 @@
     "@nats-io/obj": "^3.4.0",
     "@opentelemetry/api": "^1.9.0",
     "apache-arrow": ">=21 <22",
-    "jotai": "^3.0.1",
+    "jotai": "^3.0.2",
     "jotai-family": "^1.1.0",
     "jotai-xstate": "^0.6.1",
-    "xstate": "^5.33.2"
+    "xstate": "^5.33.4"
   },
   "dependencies": {
     "@jr200-labs/xstate-duckdb": "^1.10.0",
-    "@jr200-labs/xstate-nats": "^0.9.25",
+    "@jr200-labs/xstate-nats": "^0.10.2",
     "@js-temporal/polyfill": "^0.5.1",
     "@types/js-yaml": "^4.0.9"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@statelyai/inspect": "^0.7.2",
-    "@vitest/coverage-v8": "^5.0.3",
-    "eslint": "^10.12.0",
-    "globals": "^17.13.0",
+    "@vitest/coverage-v8": "^5.1.0",
+    "eslint": "^10.15.0",
+    "globals": "^17.14.0",
     "jotai-family": "^1.1.0",
-    "prettier": "^3.9.9",
+    "prettier": "^3.10.1",
     "syncpack": "^15.3.3",
     "typescript": "^7.0.2",
-    "typescript-eslint": "^8.71.0",
-    "vitest": "^5.0.3"
+    "typescript-eslint": "^8.72.2",
+    "vitest": "^5.1.0"
   }
 }
